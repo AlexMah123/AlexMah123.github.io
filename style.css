@@ -13,8 +13,8 @@ body {
   font-weight: 400;
   font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  background: url(background.jpg) center center no-repeat fixed;
-  background-size: cover;
+  /*background: url(background.jpg) center center no-repeat fixed;*/
+  /*background-size: cover;*/
   margin: 0;
   padding: 0;
 }
@@ -87,7 +87,6 @@ blockquote {
   margin: 1.6em 10%;
   padding: 1em;
   font-size: 1.8rem;
-  background-color: rgba(255, 255, 255, 0.1);
   color: #FFFFFF;
   border-radius: 8px;
 }
