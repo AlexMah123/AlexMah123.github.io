@@ -13,8 +13,6 @@ body {
   font-weight: 400;
   font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  /*background: url(background.jpg) center center no-repeat fixed;*/
-  /*background-size: cover;*/
   margin: 0;
   padding: 0;
 }
@@ -100,6 +98,12 @@ blockquote p:last-child {
  */
 
 /* Container setup */
+/* Full size background image */
+html, #container, .inner { background-color:transparent;}
+html {
+  background:url(background.jpg) center center no-repeat fixed;
+  background-size:cover;
+}
 body {
   max-width: 800px;
   margin: 25px auto;
