@@ -48,6 +48,12 @@ body {
     text-decoration: underline;
 }
 
+.main-menu a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
 /* Content */
 #container {
     max-width: 800px;
