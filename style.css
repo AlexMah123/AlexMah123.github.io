@@ -171,6 +171,13 @@ ul.main-menu li a.active {
 }
 
 /* Grid Container */
+.game_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
 /* Ensure anchor tags take up the full grid cell space */
 .game_link {
   text-decoration: none; /* Remove underline */
