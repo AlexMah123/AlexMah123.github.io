@@ -11,7 +11,8 @@
     
     // Remove any active classes on the main-menu
     $('.main-menu a').removeClass('active');
-    var region = location.hash.toString() || $('.main-menu a:first').attr('href') || '#home';
+    var region = location.hash.toString() || '#personal-project';
+    //$('.main-menu a:first').attr('href')
     
     // Now show the region specified in the URL hash
     $(region).show();
