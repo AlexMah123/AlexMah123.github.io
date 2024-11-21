@@ -105,6 +105,7 @@ html {
   background-size: cover;
 }
 
+/* main body style */
 body {
   max-width: 800px;
   margin: 25px auto;
@@ -112,24 +113,50 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for content area */
 }
 
-header, #content, footer { 
-  background: rgba(0, 0, 0, 0.8); 
+/* Header page style*/
+header{
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 1);
+  padding: 25px;
+  color: #FFFFFF;
+  border-radius: 8px; /* Slight rounding for cleaner look */
+  z-index: 1000; /* Ensures the header stays above the content */
+}
+
+/* Content*/
+#content{ 
+  background: rgba(0, 0, 0, 0.7); 
   padding: 25px;
   color: #FFFFFF; 
   border-radius: 8px; /* Slight rounding for cleaner look */
 }
 
-/* Menu Links */
+/*footer style*/
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  text-align: center;  
+  font-size: 1.25rem;  
+  color: #FFFFFF;
+}
+
+/* Menu tabs header list*/
 ul.main-menu {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: space-between;
   list-style: none;
 }
 
-ul.main-menu li a {
+/* Menu tabs*/
+.menu-tabs {
+  display: flex;  /* Keeps text menu items in a row */
+}
+
+.menu-tabs li a {
   margin-right: 20px;
   font-size: 2.0rem;
   border-bottom: solid transparent 3px;
@@ -137,13 +164,28 @@ ul.main-menu li a {
   transition: color 0.3s ease, border-color 0.3s ease; /* Smooth hover effect */
 }
 
-ul.main-menu li a:hover {
+.menu-tabs li a:hover {
   color: #FFFFFF;
 }
 
-ul.main-menu li a.active {
+.menu-tabs li a.active {
   color: #FFFFFF;
   border-bottom-color: #EF6D3D;
+}
+
+/* Image Icons Styling */
+.menu-icons {
+  display: flex;
+  justify-content: flex-end;  /* Align icons to the right */
+}
+
+.menu-icons li {
+  margin-left: 20px;
+}
+
+.menu-icons img {
+  width: 32px;
+  height: 32px;
 }
 
 /* Utility classes */
@@ -178,21 +220,18 @@ ul.main-menu li a.active {
   padding: 20px;
 }
 
-/* Ensure anchor tags take up the full grid cell space */
-.game_link {
+.game_link { /* Ensure anchor tags take up the full grid cell space */
   text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit text color from parent */
   display: block; /* Make the link fill the block */
   transition: transform 0.2s ease;
 }
 
-/* Add hover effects to the clickable area */
 .game_link:hover {
   transform: scale(1.02); /* Slight zoom effect on hover */
 }
 
-/* Preserve the styles of the game_cell */
-.game_cell {
+.game_cell { /* Preserve the styles of the game_cell */
   background-color: #090b14;
   max-width: 300px; /* Optional: Limit the width */
   margin: 0 auto; /* Center-align smaller cells */

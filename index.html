@@ -25,27 +25,48 @@
   </head>
   
   <body>
-
+    <!-- Header of page here-->
     <header id="header">
-      <img src="mainpage-assets/logo.png">
       <h1>Alex Mah</h1>
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#personal-portfolio">Personal Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <div class="menu-tabs">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#personal-portfolio">Personal Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+        </div>
+
+        <!-- icon hyperlinks here-->
+        <div class="menu-icons">
+          <li><a href="https://alexmah.itch.io/">
+            <img src="/mainpage-assets/itchio-logo.png" alt="itch.io">
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/alex-mah-bbb486217/" alt="linkedin">
+            <img src="/mainpage-assets/linkedin-logo.png">
+          </a></li>
+          <li><a href="https://github.com/AlexMah123" alt="github">
+            <img src="/mainpage-assets/github-logo.png">
+          </a></li>
+          <li><a href="mailto:alexmahjy@gmail.com.com" alt="email">
+            <img src="/mainpage-assets/email-logo.png">
+          </a></li>
+        </div>
+
       </ul>                 
     </header>
-   
+
+    <!-- Content here-->
     <div id="container">
-      <div id="content"> 
+      <div id="content">
+        
+        <!-- Home tab here-->
         <div id="home" class="content-region hide">
           <h2>Welcome to my portfolio!</h2>
           <p>I am a game programmer (Unity and Unreal Engine)</p>
         </div>
-        
+
+        <!-- personal portfolio tab here-->
         <div id="personal-portfolio" class="content-region hide">
           <h2>Game Jams</h2>
           <div class="game_grid">
@@ -71,11 +92,11 @@
                 <p class="text_header">Overthrone</p>
               </div>
             </a>
-
           </div>
           
         </div>
 
+        <!-- About tab here-->
         <div id="about" class="content-region hide">
           <h2>About</h2>
           <p>I am a game programmer specializing in Unity and Unreal Engine.</p>
@@ -89,15 +110,11 @@
           </ul>
         </div>
         
-        <div id="contact" class="content-region hide">
-          <h2>Contact</h2>
-          <p>Reach me via email: <a href="mailto:alexmahjy@gmail.com.com">alexmahjy@gmail.com</a></p>
-        </div>
       </div>
     </div>
 
-    <footer>  
-      <p>&copy; 2024 Alex Mah Jia Yong.</p>
+    <footer>
+      <p>&copy; 2024 Alex Mah Jia Yong. Page is always a work in progress.</p>
     </footer>
 
     <!-- Include the previous JavaScript file -->
