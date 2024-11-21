@@ -169,3 +169,48 @@ ul.main-menu li a.active {
 .button:hover {
   background-color: #0056b3;
 }
+
+/* Grid Container */
+.game_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+  max-width: 1200px; /* Center content */
+  margin: 0 auto; /* Center the grid on the page */
+}
+
+/* Grid Item */
+.game_cell {
+  background-color: #090b14;
+  border: 3px solid #a0f3f1;
+  border-radius: 5%;
+  padding: 15px;
+  text-align: center;
+  transition: all 200ms ease-in;
+  overflow: hidden; /* Ensures content stays inside */
+}
+
+/* Image Styling */
+.game_image {
+  width: 100%; /* Full width of the grid item */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Slightly rounded corners for the image */
+  transition: transform 0.3s ease;
+}
+
+/* Text Styling */
+.text_header {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hover Effects */
+.game_cell:hover {
+  border-color: #ffa733;
+  box-shadow: 0px 0px 20px 5px #ffa733;
+}
+.game_cell:hover .game_image {
+  transform: scale(1.1); /* Slight zoom effect */
+}
