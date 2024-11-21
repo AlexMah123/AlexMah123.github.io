@@ -7,7 +7,6 @@
     <meta name="description" content="Portfolio (Programmer)">
     <meta name="author" content="Game programmer (Unity and Unreal Engine)">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
   
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
@@ -28,8 +27,8 @@
   <body>
 
     <header id="header">
-      <img src="logo.png">
-      <h1>Alex Mah Jia Yong</h1>
+      <img src="mainpage-assets/logo.png">
+      <h1>Alex Mah</h1>
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
@@ -43,32 +42,38 @@
     <div id="container">
       <div id="content"> 
         <div id="home" class="content-region hide">
-          <h2>Home</h2>
-          <p>Welcome to my portfolio!</p>
+          <h2>Welcome to my portfolio!</h2>
+          <p>I am a game programmer (Unity and Unreal Engine)</p>
         </div>
         
         <div id="personalportfolio" class="content-region hide">
-          <h2>Portfolio</h2>
+          <h2>Game Jams</h2>
           <div class="game_grid">
-            <a href="game1.html" class="game_link">
+            <a href="subpages/game-jam/KeepItOff.html" class="game_link">
               <div class="game_cell">
-                <img src="KeepItOff.png" alt="Game 1" class="game_image">
+                <img src="game-thumbnail/KeepItOff.png" alt="Game 1" class="game_image">
                 <p class="text_header">Keep It Off</p>
               </div>
             </a>
-            <a href="game2.html" class="game_link">
+            <a href="subpages/game-jam/BerryUnderBelly.html" class="game_link">
               <div class="game_cell">
-                <img src="BerryUnderBelly.png" alt="Game 2" class="game_image">
+                <img src="game-thumbnail/BerryUnderBelly.png" alt="Game 2" class="game_image">
                 <p class="text_header">Berry's Under Belly</p>
               </div>
             </a>
-            <a href="game3.html" class="game_link">
+          </div>
+
+          <h2>Projects</h2>
+          <div class="game_grid">
+            <a href="subpages/projects/Overthrone.html" class="game_link">
               <div class="game_cell">
-                <img src="Overthrone.png" alt="Game 3" class="game_image">
+                <img src="game-thumbnail/Overthrone.png" alt="Game 1" class="game_image">
                 <p class="text_header">Overthrone</p>
               </div>
             </a>
+
           </div>
+          
         </div>
 
         <div id="about" class="content-region hide">
@@ -92,7 +97,7 @@
     </div>
 
     <footer>  
-      <p>&copy; 2024 Alex Mah Jia Yong. Built with ❤️.</p>
+      <p>&copy; 2024 Alex Mah Jia Yong.</p>
     </footer>
 
     <!-- Include the previous JavaScript file -->

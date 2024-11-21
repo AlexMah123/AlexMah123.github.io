@@ -101,7 +101,7 @@ html, #container, .inner {
   background-color: transparent; 
 }
 html {
-  background: url('background.jpg') center center no-repeat fixed;
+  background: url('mainpage-assets/background.jpg') center center no-repeat fixed;
   background-size: cover;
 }
 
