@@ -194,6 +194,8 @@ ul.main-menu li a.active {
 /* Preserve the styles of the game_cell */
 .game_cell {
   background-color: #090b14;
+  max-width: 300px; /* Optional: Limit the width */
+  margin: 0 auto; /* Center-align smaller cells */
   border: 3px solid #a0f3f1;
   border-radius: 5%;
   padding: 15px;
