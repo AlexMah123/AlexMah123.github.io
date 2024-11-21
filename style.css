@@ -171,16 +171,20 @@ ul.main-menu li a.active {
 }
 
 /* Grid Container */
-.game_grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Space between grid items */
-  padding: 20px;
-  max-width: 1200px; /* Center content */
-  margin: 0 auto; /* Center the grid on the page */
+/* Ensure anchor tags take up the full grid cell space */
+.game_link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+  display: block; /* Make the link fill the block */
+  transition: transform 0.2s ease;
 }
 
-/* Grid Item */
+/* Add hover effects to the clickable area */
+.game_link:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Preserve the styles of the game_cell */
 .game_cell {
   background-color: #090b14;
   border: 3px solid #a0f3f1;
@@ -188,29 +192,21 @@ ul.main-menu li a.active {
   padding: 15px;
   text-align: center;
   transition: all 200ms ease-in;
-  overflow: hidden; /* Ensures content stays inside */
+  overflow: hidden;
 }
 
-/* Image Styling */
-.game_image {
-  width: 100%; /* Full width of the grid item */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Slightly rounded corners for the image */
-  transition: transform 0.3s ease;
-}
-
-/* Text Styling */
-.text_header {
-  margin-top: 10px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* Hover Effects */
 .game_cell:hover {
   border-color: #ffa733;
   box-shadow: 0px 0px 20px 5px #ffa733;
 }
+
+.game_image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
 .game_cell:hover .game_image {
-  transform: scale(1.1); /* Slight zoom effect */
+  transform: scale(1.1);
 }
