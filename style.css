@@ -258,3 +258,89 @@ ul.main-menu {
 .game_cell:hover .game_image {
   transform: scale(1.1);
 }
+
+
+/* Resizing for Mobile */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; /* Scale down base font size to make text smaller on tablets */
+  }
+
+  body {
+    font-size: 1.4em; /* Slightly smaller font size for body text */
+    margin: 15px auto; /* Reduce body margin for smaller screens */
+    max-width: 95%; /* Use more screen width */
+  }
+
+  header {
+    padding: 15px; /* Reduce header padding */
+  }
+
+  h1 { font-size: 2.8rem; } /* Adjust headings */
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 2rem; }
+  h4 { font-size: 1.6rem; }
+  h5, h6 { font-size: 1.4rem; }
+
+  p {
+    margin: 0 auto 1.2em auto; /* Adjust paragraph spacing */
+    font-size: 1.3rem;
+  }
+
+  .menu-tabs li a {
+    font-size: 1.8rem; /* Smaller menu font */
+    margin-right: 15px; /* Reduce spacing between menu tabs */
+  }
+
+  .menu-icons img {
+    width: 24px; /* Smaller icon size */
+    height: 24px;
+  }
+
+  .game_grid {
+    grid-template-columns: repeat(2, 1fr); /* Display 2 columns instead of 3 */
+    gap: 15px; /* Reduce grid gap */
+    padding: 10px; /* Reduce grid padding */
+  }
+
+  .game_cell {
+    max-width: 250px; /* Limit game cell width */
+    padding: 10px; /* Reduce cell padding */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 45%; /* Further reduce base font size for small phones */
+  }
+
+  body {
+    font-size: 1.3em; /* Further adjust text size */
+    margin: 10px auto; /* Reduce margin */
+  }
+
+  h1 { font-size: 2.4rem; }
+  h2 { font-size: 2.0rem; }
+  h3 { font-size: 1.8rem; }
+  h4, h5, h6 { font-size: 1.4rem; }
+
+  .menu-tabs li a {
+    font-size: 1.6rem; /* Smaller font for smaller screens */
+    margin-right: 10px;
+  }
+
+  .menu-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .game_grid {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+    gap: 10px;
+  }
+
+  .game_cell {
+    max-width: 200px;
+    padding: 8px;
+  }
+}
