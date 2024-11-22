@@ -269,7 +269,7 @@ ul.main-menu {
   body {
     font-size: 1.4em; /* Slightly smaller font size for body text */
     margin: 15px auto; /* Reduce body margin for smaller screens */
-    max-width: 95%; /* Use more screen width */
+    max-width: 80%; /* Use more screen width */
   }
 
   header {
@@ -288,13 +288,13 @@ ul.main-menu {
   }
 
   .menu-tabs li a {
-    font-size: 1.8rem; /* Smaller menu font */
+    font-size: 1.5rem; /* Smaller menu font */
     margin-right: 15px; /* Reduce spacing between menu tabs */
   }
 
   .menu-icons img {
-    width: 24px; /* Smaller icon size */
-    height: 24px;
+    width: 20px; /* Smaller icon size */
+    height: 20px;
   }
 
   .game_grid {
@@ -304,18 +304,18 @@ ul.main-menu {
   }
 
   .game_cell {
-    max-width: 250px; /* Limit game cell width */
+    max-width: 175px; /* Limit game cell width */
     padding: 10px; /* Reduce cell padding */
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 45%; /* Further reduce base font size for small phones */
+    font-size: 40%; /* Further reduce base font size for small phones */
   }
 
   body {
-    font-size: 1.3em; /* Further adjust text size */
+    font-size: 1.25em; /* Further adjust text size */
     margin: 10px auto; /* Reduce margin */
   }
 
@@ -330,8 +330,8 @@ ul.main-menu {
   }
 
   .menu-icons img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 
   .game_grid {
@@ -340,7 +340,7 @@ ul.main-menu {
   }
 
   .game_cell {
-    max-width: 200px;
+    max-width: 125px;
     padding: 8px;
   }
 }
