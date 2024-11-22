@@ -180,7 +180,7 @@ ul.main-menu {
 }
 
 .menu-icons li {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .menu-icons img {
@@ -233,11 +233,12 @@ ul.main-menu {
 
 .game_cell { /* Preserve the styles of the game_cell */
   background-color: #090b14;
-  max-width: 300px; /* Optional: Limit the width */
-  margin: 0 auto; /* Center-align smaller cells */
+  width: 150px;
+  height: 150px;
+  margin: 0 auto; 
   border: 3px solid #a0f3f1;
   border-radius: 5%;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   transition: all 200ms ease-in;
   overflow: hidden;
@@ -252,6 +253,7 @@ ul.main-menu {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  padding-bottom: 4px;
   transition: transform 0.3s ease;
 }
 
@@ -267,7 +269,7 @@ ul.main-menu {
   }
 
   body {
-    font-size: 1.4em; /* Slightly smaller font size for body text */
+    font-size: 1.75em; /* Slightly smaller font size for body text */
     margin: 15px auto; /* Reduce body margin for smaller screens */
     max-width: 80%; /* Use more screen width */
   }
@@ -307,6 +309,30 @@ ul.main-menu {
     max-width: 175px; /* Limit game cell width */
     padding: 10px; /* Reduce cell padding */
   }
+
+  /* embed class style*/
+  .responsive-embed {
+    position: relative;
+    width: 100%; 
+    padding-bottom: 56.25%; /* Aspect ratio for 16:9 videos (YouTube) */
+    height: auto; 
+    overflow: hidden; 
+  }
+
+  .responsive-embed iframe {
+    position: absolute;
+    display: block; /* Still block-level */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove borders */
+  }
+
+  /* Custom aspect ratio for Itch.io embed */
+  .responsive-embed:nth-child(1) {
+    padding-bottom: 30.5%; /* Adjust aspect ratio for Itch.io (554x169) */
+  }
 }
 
 @media (max-width: 480px) {
@@ -325,8 +351,8 @@ ul.main-menu {
   h4, h5, h6 { font-size: 1.4rem; }
 
   .menu-tabs li a {
-    font-size: 1.25rem; /* Smaller font for smaller screens */
-    margin-right: 10px;
+    font-size: 1.5rem; /* Smaller font for smaller screens */
+    margin-right: 8px;
   }
 
   .menu-icons img {
@@ -345,25 +371,4 @@ ul.main-menu {
   }
 }
 
-/* embed class style*/
-.responsive-embed {
-  position: relative;
-  width: 100%; /* Take up full width of the container */
-  padding-bottom: 56.25%; /* Aspect ratio for 16:9 videos (YouTube) */
-  height: 0; /* Height is calculated dynamically */
-  overflow: hidden; /* Ensure content doesn't spill out */
-}
 
-.responsive-embed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0; /* Remove borders */
-}
-
-/* Custom aspect ratio for Itch.io embed */
-.responsive-embed:nth-child(1) {
-  padding-bottom: 30.5%; /* Adjust aspect ratio for Itch.io (554x169) */
-}
