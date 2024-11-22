@@ -286,7 +286,7 @@ ul.main-menu {
     margin: 0 auto 1.2em auto; /* Adjust paragraph spacing */
     font-size: 1.3rem;
   }
-
+  
   .menu-tabs li a {
     font-size: 1.5rem; /* Smaller menu font */
     margin-right: 15px; /* Reduce spacing between menu tabs */
@@ -325,7 +325,7 @@ ul.main-menu {
   h4, h5, h6 { font-size: 1.4rem; }
 
   .menu-tabs li a {
-    font-size: 1.6rem; /* Smaller font for smaller screens */
+    font-size: 1.25rem; /* Smaller font for smaller screens */
     margin-right: 10px;
   }
 
