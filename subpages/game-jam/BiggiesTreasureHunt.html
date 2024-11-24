@@ -92,18 +92,29 @@
                 <!-- place what i contributed/proud of here-->
                 <h3>Contribution</h3>
                 <p>
-                    I worked as the UI Programmer and the Level Designer
+                    I worked as the UI Programmer and the Level Designer.
                 </p>
 
                 <ul>
                     <li>Level Design - Tilemap</li>
-                    <li>UI - Everything</li>
-                    <li>Gameplay - Tutorial</li>
+                    <li>UI - Scene, Menu, Settings, Tutorial</li>
                 </ul>
-    
+
+                <h3>Reflection</h3>
+                <p>
+                    The gameplay mechanics were very simple due to the nature of hyper-casual games and the art design had to incorporate AirAsia's mascot into it.
+                    This was my first game jam in a while, and it was a good starting point. It plays like pinball but moving around the map.
+                    We were pleasantly surprised when we made podium since there were many good games.
+                </p>
+                
                 <!-- place screenshot of image-->
                 <h3>Achievement</h3>
-                <img src ="/game-thumbnail/RedGameJamPodium.jpg" alt = "podium" class = "game_image">
+                <img src ="/game-thumbnail/RedGameJamPodium.jpg" alt = "podium" class = "screenshot_achievement" onclick="openFullscreen(this)">
+
+                <div id="fullscreen-modal" class="fullscreen-modal">
+                    <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+                    <img id="fullscreen-image" class="fullscreen-image" src="/game-thumbnail/RedGameJamPodium.jpg" alt="Expanded Image">
+                </div>
     
             </div>
         </div>
@@ -113,7 +124,7 @@
             <p>&copy; 2024 Alex Mah Jia Yong. Page is always a work in progress.</p>
         </footer>
 
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="/script.js"></script>
 
     </body>
 </html>
