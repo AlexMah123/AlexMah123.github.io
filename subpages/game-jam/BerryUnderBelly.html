@@ -14,8 +14,8 @@
         <link href="../../mainStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/menuIconStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/embedStyle.css" rel="stylesheet" type="text/css">
-        <link href="../../styles/clickableImageStyle.css" rel="stylesheet" type="text/css">
-        <link href="../../styles/screenshotStyle.css" rel="stylesheet" type="text/css">
+        <link href="../../styles/imageStyle.css" rel="stylesheet" type="text/css">
+
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -114,6 +114,18 @@
             </p>
     
             <!-- place screenshot of image-->
+            <h3>Screenshot</h3>
+            <div class="screenshot_scroll_container">
+                <img src="/game-screenshot/Berry/Berry-SS1.png" alt="Screenshot 1" class="generic_image" onclick="openFullscreen(this)">
+                <img src="/game-screenshot/Berry/Berry-SS2.png" alt="Screenshot 2" class="generic_image" onclick="openFullscreen(this)">
+                <img src="/game-screenshot/Berry/Berry-SS3.png" alt="Screenshot 3" class="generic_image" onclick="openFullscreen(this)">
+            </div>
+
+            <!-- Full Screen-->
+            <div id="fullscreen-modal" class="fullscreen-modal">
+                <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+                <img id="fullscreen-image" class="fullscreen-image" src="/game-thumbnail/RedGameJamPodium.png" alt="Expanded Image">
+            </div>
     
     
         </div>

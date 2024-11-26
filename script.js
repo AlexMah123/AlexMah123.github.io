@@ -32,7 +32,7 @@ function openFullscreen(image) {
   // Get the modal and image elements
   const modal = document.getElementById("fullscreen-modal");
   const fullscreenImage = document.getElementById("fullscreen-image");
-
+  
   // Set the modal image source to the clicked thumbnail's source
   fullscreenImage.src = image.src;
 

@@ -2,22 +2,22 @@
 .game_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
     padding: 20px;
 }
 
-.game_link { /* Ensure anchor tags take up the full grid cell space */
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit text color from parent */
-    display: block; /* Make the link fill the block */
+.game_link { 
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
     transition: transform 0.2s ease;
 }
 
 .game_link:hover {
-    transform: scale(1.02); /* Slight zoom effect on hover */
+    transform: scale(1.02); 
 }
 
-.game_cell { /* Preserve the styles of the game_cell */
+.game_cell { 
     background-color: #090b14;
     width: 150px;
     height: 150px;
@@ -40,7 +40,7 @@
 }
 
 .game_image {
-    width: 100%;
+    width: 150px;
     height: auto;
     border-radius: 8px;
     padding-bottom: 4px;
@@ -49,20 +49,20 @@
 
 @media (max-width: 768px) {
     .game_grid {
-        grid-template-columns: repeat(2, 1fr); /* Display 2 columns instead of 3 */
-        gap: 15px; /* Reduce grid gap */
-        padding: 10px; /* Reduce grid padding */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+        padding: 10px; 
     }
 
     .game_cell {
-        max-width: 175px; /* Limit game cell width */
-        padding: 10px; /* Reduce cell padding */
+        max-width: 175px; 
+        padding: 10px; 
     }
 }
 
 @media (max-width: 480px) {
     .game_grid {
-        grid-template-columns: 1fr; /* Single column for very small screens */
+        grid-template-columns: 1fr; 
         gap: 10px;
     }
 

@@ -101,13 +101,13 @@ html, #container, .inner {
   background-color: transparent; 
 }
 html {
-  background: url('mainpage-assets/background.jpg') center center no-repeat fixed;
+  background: url('mainpage-assets/background.png') center center no-repeat fixed;
   background-size: cover;
 }
 
 /* main body style */
 body {
-  max-width: 800px;
+  max-width: 900px;
   margin: 25px auto;
   background-color: rgba(0, 0, 0, 0.8); /* Fallback background for content */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for content area */

@@ -10,15 +10,14 @@
   
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
-    <link href="/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
    
     <!-- Custom styles -->
     <link href="mainStyle.css" rel="stylesheet" type="text/css">
     <link href="/styles/menuIconStyle.css" rel="stylesheet" type="text/css">
     <link href="/styles/embedStyle.css" rel="stylesheet" type="text/css">
-    <link href="/styles/clickableImageStyle.css" rel="stylesheet" type="text/css">
-    <link href="/styles/screenshotStyle.css" rel="stylesheet" type="text/css">
+    <link href="/styles/imageStyle.css" rel="stylesheet" type="text/css">
 
     <link href="/styles/tableLayoutStyle.css" rel="stylesheet" type="text/css">
     <link href="/styles/gameCellStyle.css" rel="stylesheet" type="text/css">
@@ -96,6 +95,7 @@
                 <li>GitHub / GitLab / SourceTree</li>
                 <li>Trello</li>
                 <li>Figma</li>
+                <li>Photoshop / Photopea</li>
               </ul>
             </div>
             
@@ -201,29 +201,38 @@
         <div id="about" class="content-region hide">
           <h2>More About Me!</h2>
           <p>
-            I am Alex Mah, graduate from the University Of Wollongong, Malaysia. I am a programmer! <br>
-            I wanted to get into programming after high school but wanted to explore my interest, so took a leap of fate with Game Development.
-            I have always had an interest in games as a kid and also liked problem-solving
+            Hello, I am Alex Mah, a programmer and graduate of the University of Wollongong, Malaysia.
+            My journey into game development began after my foundation program when I decided to explore my interests.
+            This leap of faith led me to game programming, combining my love for games as a kid with my passion for problem-solving.
           </p>
           
           <p>
-            I am mostly a generalist, wanting to be more of a jack of all trades, but one specialization that I would like to explore more is Shaders.
+            Today I am mostly a generalist wanting to be more of a jack of all trades, but would like to transition mainly to be a game programmer.
+            One specialization that I would like to explore more is Shaders. It has helped expand my view on how certain visual effects can be implemented to improve games.
           </p>
           
-          <br><br>
-          <h3>Fun Facts!</h3>
-          <p>I am a big physical TCG player. I have played ~7 titles and know the rules for ~2 more titles, but actively playing <br>Magic: The Gathering</p>
-          <p>My favourite game is Persona 4: Golden</p>
+          <p>
+            Outside of work, I am a big competitive TCG player.
+            I have played around seven titles and know the rules for two more, but I am currently actively playing Magic: The Gathering.
+          </p>
         </div>
         
         <!-- Resume Tab here -->
         <div id="resume" class="content-region hide">
           <h4>You can download the PDF <a href="mainpage-assets/resume-pdf.pdf"><u>here</u></a></h4>
-          <div class="responsive-embed">
-            <img src="mainpage-assets/resume-image.png" alt="Resume" class="game_image">
+
+          <embed src="mainpage-assets/resume-pdf.pdf" width="800" height="750" type="application/pdf">
+
+
+          <!-- Full Screen-->
+          <div id="fullscreen-modal" class="fullscreen-modal">
+            <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+            <img id="fullscreen-image" class="fullscreen-image" src="/game-thumbnail/RedGameJamPodium.png" alt="Expanded Image">
           </div>
-          
         </div>
+
+        
+        
         
       </div>
     </div>

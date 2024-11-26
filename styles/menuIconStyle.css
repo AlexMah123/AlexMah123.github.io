@@ -47,19 +47,19 @@ ul.main-menu {
 
 @media (max-width: 768px) {
     .menu-tabs li a {
-        font-size: 1.5rem; /* Smaller menu font */
-        margin-right: 15px; /* Reduce spacing between menu tabs */
+        font-size: 1.5rem; 
+        margin-right: 15px; 
     }
 
     .menu-icons img {
-        width: 20px; /* Smaller icon size */
+        width: 20px; 
         height: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .menu-tabs li a {
-        font-size: 1.5rem; /* Smaller font for smaller screens */
+        font-size: 1.5rem; 
         margin-right: 8px;
     }
 
