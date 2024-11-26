@@ -1,0 +1,21 @@
+﻿.screenshot_achievement {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    padding-bottom: 4px;
+}
+
+.screenshot_achievement:hover {
+    transform: scale(1.02);
+}
+
+.screenshot_image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    padding-bottom: 4px;
+}
+
+.screenshot_image:hover {
+    transform: scale(1.02);
+}

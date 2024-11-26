@@ -1,0 +1,73 @@
+﻿/* Grid Container */
+.game_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.game_link { /* Ensure anchor tags take up the full grid cell space */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    display: block; /* Make the link fill the block */
+    transition: transform 0.2s ease;
+}
+
+.game_link:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.game_cell { /* Preserve the styles of the game_cell */
+    background-color: #090b14;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 3px solid #a0f3f1;
+    border-radius: 5%;
+    padding: 20px;
+    text-align: center;
+    transition: all 200ms ease-in;
+    overflow: hidden;
+}
+
+.game_cell:hover .game_image {
+    transform: scale(1.1);
+}
+
+.game_cell:hover {
+    border-color: #ffa733;
+    box-shadow: 0px 0px 20px 5px #ffa733;
+}
+
+.game_image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding-bottom: 4px;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .game_grid {
+        grid-template-columns: repeat(2, 1fr); /* Display 2 columns instead of 3 */
+        gap: 15px; /* Reduce grid gap */
+        padding: 10px; /* Reduce grid padding */
+    }
+
+    .game_cell {
+        max-width: 175px; /* Limit game cell width */
+        padding: 10px; /* Reduce cell padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .game_grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+        gap: 10px;
+    }
+
+    .game_cell {
+        max-width: 125px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,43 @@
+﻿/* Basic layout styling */
+.table-layout {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.table-column {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .table-layout {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .table-column
+    {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-layout {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .table-column
+    {
+        max-width: 100%;
+    }
+}
