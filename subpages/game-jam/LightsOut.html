@@ -60,6 +60,13 @@
             <!-- place Title here-->
             <h1>Lights Out</h1>
     
+            <!-- place youtube embed here-->
+            <div class ="responsive-embed">
+                <iframe width="480" height="270"
+                        src="https://www.youtube.com/embed/L6UBTOjvP9Q">
+                </iframe>
+            </div>
+            
             <!-- place itchio embed here-->
             <div class ="responsive-embed">
                 <iframe src="https://itch.io/embed/3002200?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
@@ -67,17 +74,10 @@
                     <a href="https://alexmah.itch.io/lightsout">Lights Out</a>
                 </iframe>
             </div>
-    
-            <!-- place youtube embed here-->
-            <div class ="responsive-embed">
-                <iframe width="480" height="270"
-                        src="https://www.youtube.com/embed/L6UBTOjvP9Q">
-                </iframe>
-            </div>
-            <br>
 
             <!-- place summary here-->
-            <h3><b>SUMMARY</b></h3>
+            <br>
+            <h3>SUMMARY</h3>
             <ul>
                 <li>Role: Programmer</li>
                 <li>Status: Completed</li>
@@ -85,16 +85,17 @@
                 <li>Duration: 3 Days</li>
                 <li>Jam Theme: Energy Efficiency</li>
                 <li>Engine: Unity</li>
-
             </ul>
 
             <!-- place description of game here-->
+            <br>
             <h3>Description</h3>
             <p>
                 A game about a parent trying to save electricity while their kid can't sleep...
             </p>
 
             <!-- place what i contributed/proud of here-->
+            <br>
             <h3>Contribution</h3>
             <p>
                 Our team comprised students joining their first game jam, so I was the main programmer.
@@ -108,6 +109,7 @@
                 <li>Tutorial - Introduction to teach the player what the goal of the game is.</li>
             </ul>
             
+            <br>
             <h3>Reflection</h3>
             <p>
                 This was a pretty good experience since the teams were assigned randomly by the organizers. 
@@ -119,11 +121,20 @@
             </p>
 
             <h3>Features that were implemented</h3>
-            <p>
+            <b>Interact System</b>
+            <ul>
+                <li>Abstract interface for interactable, and each interactable has its own concrete implementation.</li>
+                <li>Player raycast to check if within range of interactable.</li>
+            </ul>
 
-            </p>
+            <br>
+            <b>AI</b>
+            <ul>
+                <li>Simple State Machine with waypoints at each light, and executing The interact method.</li>
+            </ul>
             
             <!-- place screenshot of image-->
+            <br>
             <h3>Screenshot</h3>
             <div class="screenshot_scroll_container">
                 <img src="/game-screenshot/LightsOut/LightsOut-SS1.png" alt="Screenshot 1" class="generic_image" onclick="openFullscreen(this)">

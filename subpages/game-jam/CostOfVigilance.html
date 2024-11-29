@@ -60,6 +60,13 @@
                 <!-- place Title here-->
                 <h1>Cost of Vigilance</h1>
 
+                <!-- place youtube embed here-->
+                <div class ="responsive-embed">
+                    <iframe width="480" height="270"
+                            src="https://www.youtube.com/embed/9L81JGAYl7k">
+                    </iframe>
+                </div>
+    
                 <!-- place itchio embed here-->
                 <div class ="responsive-embed">
                     <iframe src="https://itch.io/embed/3034286?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
@@ -68,16 +75,9 @@
                     </iframe>
                 </div>
                 
-                <!-- place youtube embed here-->
-                <div class ="responsive-embed">
-                    <iframe width="480" height="270"
-                            src="https://www.youtube.com/embed/9L81JGAYl7k">
-                    </iframe>
-                </div>
-                <br>
-    
                 <!-- place summary here-->
-                <h3><b>SUMMARY</b></h3>
+                <br>
+                <h3>SUMMARY</h3>
                 <ul>
                     <li>Role: Programmer</li>
                     <li>Status: Completed</li>
@@ -88,6 +88,7 @@
                 </ul>
 
                 <!-- place description of game here-->
+                <br>
                 <h3>Description</h3>
                 <p>
                     You play as a vigilante trying to stop the city of crime. But the police are on your tail. 
@@ -95,6 +96,7 @@
                 </p>
 
                 <!-- place what i contributed/proud of here-->
+                <br>
                 <h3>Contribution</h3>
                 <p>
                     Taken from WWE TCG (prematch), the idea was to have decisions available that would affect the game environment. So basically Batman Arkham. But yeah!
@@ -104,10 +106,11 @@
                     <li>Light System - Day Night Cycle</li>
                     <li>Visual - Post Processing</li>
                     <li>Controls - Topdown RTS style camera</li>
-                    <li>Gameplay - Tutorial + Introduction</li>
+                    <li>Gameplay - Tutorial + Introduction, GameManager, Decisions</li>
                     <li>UI - Scene, Settings, Menu, Gameplay HUD</li>
                 </ul>
 
+                <br>
                 <h3>Reflection</h3>
                 <p>
                     This game jam was very experimental. I wanted to try out the idea of a simulation game, but the game interacts with the player based on their decision.
@@ -119,12 +122,23 @@
                     <a href="https://alexmah.itch.io/cost-of-vigilance/devlog/815407/minijam-169-things-that-would-have-been-nice-to-add"><u>here!</u></a>
                 </p>
 
+                <br>
                 <h3>Features that were implemented</h3>
-                <p>
+                <b>Decision</b>
+                <ul>
+                    <li>Scriptable Objects to hold common data</li>
+                </ul>
+                
 
-                </p>
+                <br>
+                <b>GameManager</b>
+                <ul>
+                    <li>Tracks the current state of the game.</li>
+                    <li>Whenever a player makes a decision, adds to the current state of the game (current alert, current vigilante, decisions made, etc.)</li>
+                </ul>
                 
                 <!-- place screenshot of image-->
+                <br>
                 <h3>Screenshot</h3>
                 <div class="screenshot_scroll_container">
                     <img src="/game-screenshot/CostOfVigilance/CostOfVigilance-SS1.png" alt="Screenshot 1" class="generic_image" onclick="openFullscreen(this)">
