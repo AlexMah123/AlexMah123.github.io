@@ -109,7 +109,7 @@ html {
 
 /* main body style */
 body {
-  max-width: 950px;
+  max-width: 1000px;
   margin: 25px auto;
   background-color: rgba(0, 0, 0, 0.8); /* Fallback background for content */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for content area */

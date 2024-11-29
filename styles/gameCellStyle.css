@@ -19,8 +19,8 @@
 
 .game_cell { 
     background-color: #090b14;
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 250px;
     margin: 0 auto;
     border: 3px solid #a0f3f1;
     border-radius: 5%;
@@ -46,6 +46,18 @@
     padding-bottom: 4px;
     transition: transform 0.3s ease;
 }
+
+.gameText_header{
+    color: #ffb075;
+    font-size: 1.5rem;
+}
+
+.gameText_description
+{
+    font-size: 1.25rem;
+}
+
+
 
 @media (max-width: 768px) {
     .game_grid {
