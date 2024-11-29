@@ -19,8 +19,8 @@
 
 .game_cell { 
     background-color: #090b14;
-    width: 200px;
-    height: 250px;
+    width: 205px;
+    height: 255px;
     margin: 0 auto;
     border: 3px solid #a0f3f1;
     border-radius: 5%;
@@ -67,8 +67,8 @@
     }
 
     .game_cell {
-        max-width: 150px; 
-        max-height: 150px;
+        max-width: 175px; 
+        max-height: 175px;
         padding: 10px; 
     }
 }
