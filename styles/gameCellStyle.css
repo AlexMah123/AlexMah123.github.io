@@ -14,24 +14,24 @@
 }
 
 .game_link:hover {
-    transform: scale(1.02); 
+    transform: scale(1.05); 
 }
 
 .game_cell { 
-    background-color: #090b14;
+    background-color: #323232;
     width: 200px;
     height: 250px;
     margin: 0 auto;
     border: 3px solid #a0f3f1;
     border-radius: 5%;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     transition: all 200ms ease-in;
     overflow: hidden;
 }
 
 .game_cell:hover .game_image {
-    transform: scale(1.1);
+    transform: scale(1.125);
 }
 
 .game_cell:hover {
@@ -57,8 +57,6 @@
     font-size: 1.25rem;
 }
 
-
-
 @media (max-width: 768px) {
     .game_grid {
         grid-template-columns: repeat(2, 1fr); 
@@ -68,7 +66,7 @@
 
     .game_cell {
         max-width: 175px; 
-        max-height: 200ppx;
+        max-height: 200px;
         padding: 10px; 
     }
 }
