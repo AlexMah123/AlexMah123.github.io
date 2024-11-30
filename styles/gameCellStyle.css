@@ -68,7 +68,7 @@
 
     .game_cell {
         max-width: 175px; 
-        max-height: 20ppx;
+        max-height: 200ppx;
         padding: 10px; 
     }
 }
