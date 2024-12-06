@@ -18,40 +18,15 @@
         
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <script src="/loadGoogleAnalytics.js" defer></script>
+
     </head>
     
     <body>
     <!-- Header of page here-->
-    <header id="header">
-        <h1>Alex Mah</h1>
-        <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-        <ul class="main-menu">
-            <!-- menu tabs here-->
-            <div class="menu-tabs">
-                <li><a href="/index.html#home">Home</a></li>
-                <li><a href="/index.html#personal-portfolio">Portfolio</a></li>
-                <li><a href="/index.html#about">About</a></li>
-                <li><a href="/index.html#resume">Resume</a></li>
-            </div>
-            
-            <!-- icon hyperlinks here-->
-            <div class="menu-icons">
-                <li><a href="https://alexmah.itch.io/">
-                    <img src="/mainpage-assets/itchio-logo.png" alt="itch.io">
-                </a></li>
-                <li><a href="https://www.linkedin.com/in/alex-mah-bbb486217/" alt="linkedin">
-                    <img src="/mainpage-assets/linkedin-logo.png">
-                </a></li>
-                <li><a href="https://github.com/AlexMah123" alt="github">
-                    <img src="/mainpage-assets/github-logo.png">
-                </a></li>
-                <li><a href="mailto:alexmahjy@gmail.com.com" alt="email">
-                    <img src="/mainpage-assets/email-logo.png">
-                </a></li>
-            </div>
-    
-        </ul>
-    </header>
+    <div id="header"></div>
+
     
     <!-- Content here-->
     <div id="container">
@@ -149,11 +124,16 @@
     </div>
     
     <!-- Footer here-->
-    <footer>
-        <p>&copy; 2024 Alex Mah Jia Yong. Page is always a work in progress.</p>
-    </footer>
+    <div id="footer"></div>
 
+    <!-- Include the previous JavaScript file -->
     <script type="text/javascript" src="/script.js"></script>
+    <script  src="/loadHeaderFooter.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadHeaderFooter("#header", "#footer");
+        });
+    </script>
     
     </body>
 </html>
