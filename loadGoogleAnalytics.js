@@ -16,11 +16,18 @@
         gtag('js', new Date());
         gtag('config', 'G-9QCRQ7NQCZ');
     };
+
+    // Handle script loading errors
+    scriptTag.onerror = () => {
+        console.error('Failed to load Google Analytics script.');
+    };
 }
 
-window.onload = function () {
+// Initialize Google Analytics when the DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
     loadGoogleAnalytics();
-};
+});
+
 
 
 

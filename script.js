@@ -1,32 +1,36 @@
-// Wait for the document to load before running the script 
+// Wait for the document to load
 (function ($) {
+  $(window).on('load hashchange', function () {
+    // Wait for the header to be loaded before applying the logic
+    if (!document.querySelector('.main-menu')) {
+      setTimeout(() => $(window).trigger('hashchange'), 100);
+      return;
+    }
 
-  // We use some Javascript and the URL #fragment to hide/show different parts of the page
-  // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_element_on_the_same_page
-  $(window).on('load hashchange', function(){
-
-    // First hide all content regions, then show the content-region specified in the URL hash 
-    // (or if no hash URL is found, default to first menu item)
+    // Hide all content regions
     $('.content-region').hide();
 
     // Remove any active classes on the main-menu
     $('.main-menu a').removeClass('active');
-    var region = location.hash.toString() || $('.main-menu a:first').attr('href');
 
-    // Now show the region specified in the URL hash
+    // Determine the current hash or default to the first menu item
+    const region = location.hash || $('.main-menu a:first').attr('href');
+
+    // Show the region specified in the hash
     $(region).show();
 
-    // Highlight the menu link associated with this region by adding the .active CSS class
-    $('.main-menu a[href="'+ region +'"]').addClass('active');
+    // Highlight the active menu link
+    $('.main-menu a[href="' + region + '"]').addClass('active');
 
-    // Alternate method: Use AJAX to load the contents of an external file into a div based on URL fragment
-    // This will extract the region name from URL hash, and then load [region].html into the main #content div
-    // var region = location.hash.toString() || '#first';
-    // $('#content').load(region.slice(1) + '.html')
-
+    // If on a subpage, redirect to the main page with the correct hash
+    const isSubPage = !window.location.pathname.endsWith('index.html');
+    if (isSubPage && region) {
+      const mainPageURL = `https://alexmah123.github.io/index.html${region}`;
+      window.location.href = mainPageURL;
+    }
   });
-
 })(jQuery);
+
 
 function openFullscreen(image) {
   // Get the modal and image elements
