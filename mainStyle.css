@@ -117,7 +117,8 @@ body {
 
 /* Header page style*/
 header{
-  position: sticky;
+  position: fixed;
+  width: 950px;
   top: 0;
   background: rgba(0, 0, 0, 1);
   padding: 25px;
@@ -165,6 +166,7 @@ footer {
 
   header {
     padding: 15px; /* Reduce header padding */
+    max-width: 76%;
   }
 
   h1 { font-size: 2.8rem; } /* Adjust headings */
@@ -187,6 +189,10 @@ footer {
   body {
     font-size: 1.25em; /* Further adjust text size */
     margin: 10px auto; /* Reduce margin */
+  }
+  
+  header{
+    width: 73%
   }
 
   h1 { font-size: 2.4rem; }
