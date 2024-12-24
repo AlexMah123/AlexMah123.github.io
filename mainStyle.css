@@ -109,6 +109,7 @@ html {
 
 /* main body style */
 body {
+  padding-top: 100px; /* Space to prevent overlap */
   max-width: 1000px;
   margin: 25px auto;
   background-color: rgba(0, 0, 0, 0.8); /* Fallback background for content */
@@ -162,6 +163,7 @@ footer {
     font-size: 1.75em; /* Slightly smaller font size for body text */
     margin: 15px auto; /* Reduce body margin for smaller screens */
     max-width: 80%; /* Use more screen width */
+    padding-top: 60px; /* Space to prevent overlap */
   }
 
   header {
@@ -189,6 +191,7 @@ footer {
   body {
     font-size: 1.25em; /* Further adjust text size */
     margin: 10px auto; /* Reduce margin */
+    padding-top: 50px; /* Space to prevent overlap */
   }
   
   header{
