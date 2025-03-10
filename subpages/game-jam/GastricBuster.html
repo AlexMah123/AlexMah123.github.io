@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Page setup -->
+        <meta charset="utf-8">
+        <title>Gastric Buster - Game Jam</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    
+        <!-- Reset default styles and add support for google fonts -->
+        <link href="/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    
+        <!-- Link to external CSS from the root folder -->
+        <link href="../../mainStyle.css" rel="stylesheet" type="text/css">
+        <link href="../../styles/menuIconStyle.css" rel="stylesheet" type="text/css">
+        <link href="../../styles/embedStyle.css" rel="stylesheet" type="text/css">
+        <link href="../../styles/imageStyle.css" rel="stylesheet" type="text/css">
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <script src="/loadGoogleAnalytics.js" defer></script>
+
+    </head>
+    
+    <body>
+    <!-- Header of page here-->
+    <div id="header"></div>
+    
+    <!-- Content here-->
+    <div id="container">
+        <div id="content">
+            <!-- place Title here-->
+            <h1>Gastric Buster</h1>
+    
+            <!-- place youtube embed here-->
+            <div class ="responsive-embed">
+                <iframe width="480" height="270" allowfullscreen
+                        src="https://www.youtube.com/embed/AbSEZ0zWpm4">
+                </iframe>
+            </div>
+    
+            <!-- place itchio embed here-->
+            <div class ="responsive-embed">
+                <iframe src="https://itch.io/embed/3272334?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
+                        width="554" height="169">
+                    <a href="https://alexmah.itch.io/gastric-buster">GastricBuster</a>
+                </iframe>
+            </div>
+
+            <!-- place summary here-->
+            <br>
+            <h3>SUMMARY</h3>
+            <ul>
+                <li>Role: AI Programmer</li>
+                <li>Status: Completed</li>
+                <li>Team members: 5</li>
+                <li>Duration: 2 Days</li>
+                <li>Jam Theme/Prerequisite: Bubbles</li>
+                <li>Engine: Unity</li>
+            </ul>
+
+            <!-- place description of game here-->
+            <br>
+            <h3>Description</h3>
+            <p>
+                You are an indigestion medicine tasked with cleansing toxic acidic bubbles.
+                You are outnumbered and need to cleanse them carefully.
+            </p>
+
+            <!-- place screenshot of image-->
+            <br>
+            <h3>Screenshots</h3>
+            <div class="screenshot_scroll_container">
+                <img src="/game-screenshot/Gastric/Gastric-SS1.png" alt="Screenshot 1" class="generic_image" onclick="openFullscreen(this)">
+                <img src="/game-screenshot/Gastric/Gastric-SS2.png" alt="Screenshot 2" class="generic_image" onclick="openFullscreen(this)">
+                <img src="/game-screenshot/Gastric/Gastric-SS3.png" alt="Screenshot 3" class="generic_image" onclick="openFullscreen(this)">
+                <img src="/game-screenshot/Gastric/Gastric-SS4.png" alt="Screenshot 4" class="generic_image" onclick="openFullscreen(this)">
+            </div>
+
+            <!-- place what i contributed/proud of here-->
+            <br>
+            <h3>My Contribution</h3>
+            <p>
+                Our game was relatively simple, but scalable idea. I chose to focus on the enemy AI/behavior.
+                We worked together on ironing out the design of the game. <br>
+            </p>
+
+            <br>
+            <h3>Reflection</h3>
+            <p>
+                The theme this time around was relatively simple but challenging, which such a straight forward theme, it was pretty challenging to come up with an idea that is stands out.
+                We thought of a few buzzwords to take advantage of the theme such as social bubble, economic bubble, bubble (boiling), bubble (float), bubble (pop).
+                We decided to play it safe and went ahead with a bullet-hell style game. Usually I personally would try to be cheeky and come up with something smart,
+                but it was a little too restricting. A safe idea is still a solid idea.
+                <br><br>
+                We definitely had a solid base since it was relatively simple to expand the game, adding abilities/behaviors do not take a lot (other than the implementation of it).
+                Abilities were modular so it was very customizable during our discussions
+            </p>
+
+            <br>
+            <h3>Features that were implemented</h3>
+            
+            <ul>
+                <li><b>AI - </b>Dash, Trailing explosives, Shooting</li>
+                <li><b>SFX - </b>Gather assets</li>
+            </ul>
+
+            <!-- Full Screen-->
+            <div id="fullscreen-modal" class="fullscreen-modal">
+                <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+                <img id="fullscreen-image" class="fullscreen-image" src="/game-thumbnail/RedGameJamPodium.png" alt="Expanded Image">
+            </div>
+    
+    
+        </div>
+    </div>
+    
+    <!-- Footer here-->
+    <div id="footer"></div>
+
+    <!-- Include the previous JavaScript file -->
+    <script type="text/javascript" src="/script.js"></script>
+    <script  src="/loadHeaderFooter.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadHeaderFooter("#header", "#footer");
+        });
+    </script>
+    
+    </body>
+</html>
