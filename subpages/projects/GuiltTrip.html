@@ -1,110 +1,83 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Page setup -->
-        <meta charset="utf-8">
-        <title>Guilt Trip - Project</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guilt Trip - Project</title>
+    <meta name="description" content="Guilt trip is a 2D RPG where a horrible car accident has cost the lives of Alex’s family members and has made Alex to have never-ending nightmares every da...">
 
-        <!-- Reset default styles and add support for google fonts -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Reset default styles and load fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Site styles -->
-        <link href="/mainStyle.css" rel="stylesheet">
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="/mainStyle.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-        <script src="/script.js" defer></script>
-        <script src="/loadGoogleAnalytics.js" defer></script>
+    <script src="/script.js" defer></script>
+  </head>
 
-    </head>
-
-    <body>
-    <!-- Header of page here-->
+  <body>
     <div id="header"></div>
 
-    <!-- Content here-->
     <div id="container">
-        <div id="content">
-            <!-- place Title here-->
-            <h1>Guilt Trip</h1>
+      <div id="content">
+        <h1>Guilt Trip</h1>
 
-            <!-- place youtube embed here-->
-            <div class ="responsive-embed">
-                <iframe width="480" height="270" allowfullscreen
-                        src="https://www.youtube.com/embed/etgTpAIKsto">
-                </iframe>
-            </div>
-
-            <!-- place itchio embed here-->
-            <div class ="responsive-embed">
-                <iframe src="https://itch.io/embed/1656366?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
-                        width="554" height="169">
-                    <a href="https://alexmah.itch.io/guilt-trip">Guilt Trip</a>
-                </iframe>
-            </div>
-
-            <!-- place summary here-->
-            <h3>SUMMARY</h3>
-            <ul>
-                <li>Role: Programmer</li>
-                <li>Status: Completed</li>
-                <li>Team members: 7</li>
-                <li>Duration: 3 months</li>
-                <li>Genre: Turn-based, RPG</li>
-                <li>Engine: Unity</li>
-            </ul>
-
-            <!-- place description of game here-->
-            <h3>Description</h3>
-            <p>
-                Guilt trip is a 2D RPG where a horrible car accident has cost the lives of Alex’s family members and has made
-                Alex to have never-ending nightmares every day as he falls into despair. He needs to resolve his inner demons and come to terms with his past.
-            </p>
-
-            <!-- place screenshot of image-->
-            <h3>Screenshots</h3>
-            <div class="screenshot_scroll_container">
-                <img src="/game-screenshot/GuiltTrip/GuiltTrip-SS1.jpg" alt="Guilt Trip screenshot 1" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/GuiltTrip/GuiltTrip-SS2.jpg" alt="Guilt Trip screenshot 2" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/GuiltTrip/GuiltTrip-SS3.jpg" alt="Guilt Trip screenshot 3" class="generic_image" loading="lazy">
-            </div>
-
-            <!-- place what i contributed/proud of here-->
-            <h3>My Contribution</h3>
-            <p>
-                I was the team lead and the tech lead.
-            </p>
-
-            <ul>
-                <li>Enemy: Patrol and Chase behaviour.</li>
-                <li>Boss: Boss phases/stats, Decision-making and dialogue paths (Inkle plugin).</li>
-            </ul>
-
-            <h3>Reflection</h3>
-            <p>
-                This was our first team project as students, and there were a few things that we could have tried instead in retrospect.
-                One of the main inspirations and references that we used was UnderTale and Omori.
-                We had similar conversational dynamics between the player and the enemy as part of the core gameplay loop, but the gameplay could have been a little more polished.
-                Another element of gameplay during combat just like how UnderTale implements combat could be interesting to keep the players engaged in the story while providing a fun mini-game experience.
-                <br><br>
-                But all things said and done, it is a solid first project as students embarking on our game development journey.
-            </p>
-
-<!--
-            <h3>Features that were implemented</h3>
-            <p>
-
-            </p>
--->
-
+        <div class="responsive-embed">
+          <iframe src="https://www.youtube.com/embed/etgTpAIKsto" title="Guilt Trip gameplay video" width="480" height="270" loading="lazy" allowfullscreen></iframe>
         </div>
+
+        <div class="responsive-embed itch-embed">
+          <iframe src="https://itch.io/embed/1656366?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff" title="Guilt Trip on itch.io" width="554" height="169" loading="lazy"><a href="https://alexmah.itch.io/guilt-trip">Guilt Trip</a></iframe>
+        </div>
+
+        <h3>SUMMARY</h3>
+        <ul>
+          <li>Role: Programmer</li>
+          <li>Status: Completed</li>
+          <li>Team members: 7</li>
+          <li>Duration: 3 months</li>
+          <li>Genre: Turn-based, RPG</li>
+          <li>Engine: Unity</li>
+        </ul>
+
+        <h3>Description</h3>
+        <p>
+          Guilt trip is a 2D RPG where a horrible car accident has cost the lives of Alex’s family members and has made
+          Alex to have never-ending nightmares every day as he falls into despair. He needs to resolve his inner demons and come to terms with his past.
+        </p>
+
+        <h3>Screenshots</h3>
+        <div class="screenshot_scroll_container">
+          <img src="/game-screenshot/GuiltTrip/GuiltTrip-SS1.jpg" alt="Guilt Trip screenshot 1" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/GuiltTrip/GuiltTrip-SS2.jpg" alt="Guilt Trip screenshot 2" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/GuiltTrip/GuiltTrip-SS3.jpg" alt="Guilt Trip screenshot 3" class="generic_image" loading="lazy">
+        </div>
+
+        <h3>My Contribution</h3>
+        <p>
+          I was the team lead and the tech lead.
+        </p>
+
+        <ul>
+          <li>Enemy: Patrol and Chase behaviour.</li>
+          <li>Boss: Boss phases/stats, Decision-making and dialogue paths (Inkle plugin).</li>
+        </ul>
+
+        <h3>Reflection</h3>
+        <p>
+          This was our first team project as students, and there were a few things that we could have tried instead in retrospect.
+          One of the main inspirations and references that we used was UnderTale and Omori.
+          We had similar conversational dynamics between the player and the enemy as part of the core gameplay loop, but the gameplay could have been a little more polished.
+          Another element of gameplay during combat just like how UnderTale implements combat could be interesting to keep the players engaged in the story while providing a fun mini-game experience.
+          <br><br>
+          But all things said and done, it is a solid first project as students embarking on our game development journey.
+        </p>
+      </div>
     </div>
 
-    <!-- Footer here-->
     <div id="footer"></div>
-
-    </body>
+  </body>
 </html>

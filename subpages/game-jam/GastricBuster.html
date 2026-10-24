@@ -1,108 +1,88 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Page setup -->
-        <meta charset="utf-8">
-        <title>Gastric Buster - Game Jam</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gastric Buster - Game Jam</title>
+    <meta name="description" content="You are an indigestion medicine tasked with cleansing toxic acidic bubbles. You are outnumbered and need to cleanse them carefully.">
 
-        <!-- Reset default styles and add support for google fonts -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Reset default styles and load fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Site styles -->
-        <link href="/mainStyle.css" rel="stylesheet">
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="/mainStyle.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-        <script src="/script.js" defer></script>
-        <script src="/loadGoogleAnalytics.js" defer></script>
+    <script src="/script.js" defer></script>
+  </head>
 
-    </head>
-
-    <body>
-    <!-- Header of page here-->
+  <body>
     <div id="header"></div>
 
-    <!-- Content here-->
     <div id="container">
-        <div id="content">
-            <!-- place Title here-->
-            <h1>Gastric Buster</h1>
+      <div id="content">
+        <h1>Gastric Buster</h1>
 
-            <!-- place youtube embed here-->
-            <div class ="responsive-embed">
-                <iframe width="480" height="270" allowfullscreen
-                        src="https://www.youtube.com/embed/AbSEZ0zWpm4">
-                </iframe>
-            </div>
-
-            <!-- place itchio embed here-->
-            <div class ="responsive-embed">
-                <iframe src="https://itch.io/embed/3272334?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
-                        width="554" height="169">
-                    <a href="https://alexmah.itch.io/gastric-buster">GastricBuster</a>
-                </iframe>
-            </div>
-
-            <!-- place summary here-->
-            <h3>SUMMARY</h3>
-            <ul>
-                <li>Role: AI Programmer</li>
-                <li>Status: Completed</li>
-                <li>Team members: 5</li>
-                <li>Duration: 2 Days</li>
-                <li>Jam Theme/Prerequisite: Bubbles</li>
-                <li>Engine: Unity</li>
-            </ul>
-
-            <!-- place description of game here-->
-            <h3>Description</h3>
-            <p>
-                You are an indigestion medicine tasked with cleansing toxic acidic bubbles.
-                You are outnumbered and need to cleanse them carefully.
-            </p>
-
-            <!-- place screenshot of image-->
-            <h3>Screenshots</h3>
-            <div class="screenshot_scroll_container">
-                <img src="/game-screenshot/Gastric/Gastric-SS1.jpg" alt="Gastric Buster screenshot 1" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/Gastric/Gastric-SS2.jpg" alt="Gastric Buster screenshot 2" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/Gastric/Gastric-SS3.jpg" alt="Gastric Buster screenshot 3" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/Gastric/Gastric-SS4.jpg" alt="Gastric Buster screenshot 4" class="generic_image" loading="lazy">
-            </div>
-
-            <!-- place what i contributed/proud of here-->
-            <h3>My Contribution</h3>
-            <p>
-                Our game was relatively simple, but scalable idea. I chose to focus on the enemy AI/behavior.
-                We worked together on ironing out the design of the game. <br>
-            </p>
-
-            <h3>Reflection</h3>
-            <p>
-                The theme this time around was relatively simple but challenging, which such a straight forward theme, it was pretty challenging to come up with an idea that is stands out.
-                We thought of a few buzzwords to take advantage of the theme such as social bubble, economic bubble, bubble (boiling), bubble (float), bubble (pop).
-                We decided to play it safe and went ahead with a bullet-hell style game. Usually I personally would try to be cheeky and come up with something smart,
-                but it was a little too restricting. A safe idea is still a solid idea.
-                <br><br>
-                We definitely had a solid base since it was relatively simple to expand the game, adding abilities/behaviors do not take a lot (other than the implementation of it).
-                Abilities were modular so it was very customizable during our discussions
-            </p>
-
-            <h3>Features that were implemented</h3>
-
-            <ul>
-                <li><b>AI - </b>Dash, Trailing explosives, Shooting</li>
-                <li><b>SFX - </b>Gather assets</li>
-            </ul>
-
+        <div class="responsive-embed">
+          <iframe src="https://www.youtube.com/embed/AbSEZ0zWpm4" title="Gastric Buster gameplay video" width="480" height="270" loading="lazy" allowfullscreen></iframe>
         </div>
+
+        <div class="responsive-embed itch-embed">
+          <iframe src="https://itch.io/embed/3272334?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff" title="Gastric Buster on itch.io" width="554" height="169" loading="lazy"><a href="https://alexmah.itch.io/gastric-buster">GastricBuster</a></iframe>
+        </div>
+
+        <h3>SUMMARY</h3>
+        <ul>
+          <li>Role: AI Programmer</li>
+          <li>Status: Completed</li>
+          <li>Team members: 5</li>
+          <li>Duration: 2 Days</li>
+          <li>Jam Theme/Prerequisite: Bubbles</li>
+          <li>Engine: Unity</li>
+        </ul>
+
+        <h3>Description</h3>
+        <p>
+          You are an indigestion medicine tasked with cleansing toxic acidic bubbles.
+          You are outnumbered and need to cleanse them carefully.
+        </p>
+
+        <h3>Screenshots</h3>
+        <div class="screenshot_scroll_container">
+          <img src="/game-screenshot/Gastric/Gastric-SS1.jpg" alt="Gastric Buster screenshot 1" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/Gastric/Gastric-SS2.jpg" alt="Gastric Buster screenshot 2" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/Gastric/Gastric-SS3.jpg" alt="Gastric Buster screenshot 3" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/Gastric/Gastric-SS4.jpg" alt="Gastric Buster screenshot 4" class="generic_image" loading="lazy">
+        </div>
+
+        <h3>My Contribution</h3>
+        <p>
+          Our game was relatively simple, but scalable idea. I chose to focus on the enemy AI/behavior.
+          We worked together on ironing out the design of the game.
+        </p>
+
+        <h3>Reflection</h3>
+        <p>
+          The theme this time around was relatively simple but challenging, which such a straight forward theme, it was pretty challenging to come up with an idea that is stands out.
+          We thought of a few buzzwords to take advantage of the theme such as social bubble, economic bubble, bubble (boiling), bubble (float), bubble (pop).
+          We decided to play it safe and went ahead with a bullet-hell style game. Usually I personally would try to be cheeky and come up with something smart,
+          but it was a little too restricting. A safe idea is still a solid idea.
+          <br><br>
+          We definitely had a solid base since it was relatively simple to expand the game, adding abilities/behaviors do not take a lot (other than the implementation of it).
+          Abilities were modular so it was very customizable during our discussions
+        </p>
+
+        <h3>Features that were implemented</h3>
+
+        <ul>
+          <li><b>AI - </b>Dash, Trailing explosives, Shooting</li>
+          <li><b>SFX - </b>Gather assets</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Footer here-->
     <div id="footer"></div>
-
-    </body>
+  </body>
 </html>

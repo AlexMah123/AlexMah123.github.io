@@ -1,110 +1,90 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Page setup -->
-        <meta charset="utf-8">
-        <title>Berry's Under Belly- Game Jam</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berry's Under Belly - Game Jam</title>
+    <meta name="description" content="You adopt a cat from the shelter, but something is odd... The foundation that you adopted Berry started sending you surveys, and every time you try to contac...">
 
-        <!-- Reset default styles and add support for google fonts -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Reset default styles and load fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Site styles -->
-        <link href="/mainStyle.css" rel="stylesheet">
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="/mainStyle.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-        <script src="/script.js" defer></script>
-        <script src="/loadGoogleAnalytics.js" defer></script>
+    <script src="/script.js" defer></script>
+  </head>
 
-    </head>
-
-    <body>
-    <!-- Header of page here-->
+  <body>
     <div id="header"></div>
 
-    <!-- Content here-->
     <div id="container">
-        <div id="content">
-            <!-- place Title here-->
-            <h1>Berry's Under Belly</h1>
+      <div id="content">
+        <h1>Berry's Under Belly</h1>
 
-            <!-- place youtube embed here-->
-            <div class ="responsive-embed">
-                <iframe width="480" height="270" allowfullscreen
-                        src="https://www.youtube.com/embed/6Swrc_8E_pY">
-                </iframe>
-            </div>
-
-            <!-- place itchio embed here-->
-            <div class ="responsive-embed">
-                <iframe src="https://itch.io/embed/3079481?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
-                        width="554" height="169">
-                    <a href="https://alexmah.itch.io/under-belly">Berry's Under Belly</a>
-                </iframe>
-            </div>
-
-            <!-- place summary here-->
-            <h3>SUMMARY</h3>
-            <ul>
-                <li>Role:  VFX / UI Programmer</li>
-                <li>Status: Completed</li>
-                <li>Team members: 7</li>
-                <li>Duration: 2 Days</li>
-                <li>Jam Theme/Prerequisite: Cats/Only one mechanic</li>
-                <li>Engine: Unity</li>
-            </ul>
-
-            <!-- place description of game here-->
-            <h3>Description</h3>
-            <p>
-                You adopt a cat from the shelter, but something is odd...
-                The foundation that you adopted Berry started sending you surveys, and every time you try to contact the admin, they only direct you to the survey...
-            </p>
-
-            <!-- place screenshot of image-->
-            <h3>Screenshots</h3>
-            <div class="screenshot_scroll_container">
-                <img src="/game-screenshot/Berry/Berry-SS1.jpg" alt="Berry's Under Belly screenshot 1" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/Berry/Berry-SS2.jpg" alt="Berry's Under Belly screenshot 2" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/Berry/Berry-SS3.jpg" alt="Berry's Under Belly screenshot 3" class="generic_image" loading="lazy">
-            </div>
-
-            <!-- place what i contributed/proud of here-->
-            <h3>My Contribution</h3>
-            <p>
-                Our game was relatively simple, so there was not as much to do. I chose to focus on the UI/design side of the game.
-                We worked together on ironing out the design of the game. <br>
-            </p>
-
-            <ul>
-                <li>Visual - Shaders(Outline, CRT), Post Processing</li>
-                <li>UI - Menu, Scene, Settings</li>
-            </ul>
-
-            <h3>Reflection</h3>
-            <p>
-                With a small scope and a brief timeframe, I decided to focus on UI and Visuals. I created a few simple shaders and played around with Post Processing.
-                It was a good practice to learn/implement some simple shaders to enhance the game experience (CRT, Chromatic Aberration)
-                We wanted the game to be a short simple retro thriller/horror game, and with the number of artists we had, I think we managed to produce a good feeling of it.
-                <br><br>
-                I did little programming since we had to split up the work between three programmers. But overall, we are happy with the results.
-                We definitely had to cut a few features/visual implementations out of the game due to time constraint, but we did pretty well in the game voting.
-            </p>
-
-            <h3>Features that were implemented</h3>
-            <b>Shaders</b>
-            <ul>
-                <li> Inverse Hull Method, Chromatic Aberration.</li>
-            </ul>
-
+        <div class="responsive-embed">
+          <iframe src="https://www.youtube.com/embed/6Swrc_8E_pY" title="Berry's Under Belly gameplay video" width="480" height="270" loading="lazy" allowfullscreen></iframe>
         </div>
+
+        <div class="responsive-embed itch-embed">
+          <iframe src="https://itch.io/embed/3079481?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff" title="Berry's Under Belly on itch.io" width="554" height="169" loading="lazy"><a href="https://alexmah.itch.io/under-belly">Berry's Under Belly</a></iframe>
+        </div>
+
+        <h3>SUMMARY</h3>
+        <ul>
+          <li>Role: VFX / UI Programmer</li>
+          <li>Status: Completed</li>
+          <li>Team members: 7</li>
+          <li>Duration: 2 Days</li>
+          <li>Jam Theme/Prerequisite: Cats/Only one mechanic</li>
+          <li>Engine: Unity</li>
+        </ul>
+
+        <h3>Description</h3>
+        <p>
+          You adopt a cat from the shelter, but something is odd...
+          The foundation that you adopted Berry started sending you surveys, and every time you try to contact the admin, they only direct you to the survey...
+        </p>
+
+        <h3>Screenshots</h3>
+        <div class="screenshot_scroll_container">
+          <img src="/game-screenshot/Berry/Berry-SS1.jpg" alt="Berry's Under Belly screenshot 1" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/Berry/Berry-SS2.jpg" alt="Berry's Under Belly screenshot 2" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/Berry/Berry-SS3.jpg" alt="Berry's Under Belly screenshot 3" class="generic_image" loading="lazy">
+        </div>
+
+        <h3>My Contribution</h3>
+        <p>
+          Our game was relatively simple, so there was not as much to do. I chose to focus on the UI/design side of the game.
+          We worked together on ironing out the design of the game.
+        </p>
+
+        <ul>
+          <li>Visual - Shaders(Outline, CRT), Post Processing</li>
+          <li>UI - Menu, Scene, Settings</li>
+        </ul>
+
+        <h3>Reflection</h3>
+        <p>
+          With a small scope and a brief timeframe, I decided to focus on UI and Visuals. I created a few simple shaders and played around with Post Processing.
+          It was a good practice to learn/implement some simple shaders to enhance the game experience (CRT, Chromatic Aberration)
+          We wanted the game to be a short simple retro thriller/horror game, and with the number of artists we had, I think we managed to produce a good feeling of it.
+          <br><br>
+          I did little programming since we had to split up the work between three programmers. But overall, we are happy with the results.
+          We definitely had to cut a few features/visual implementations out of the game due to time constraint, but we did pretty well in the game voting.
+        </p>
+
+        <h3>Features that were implemented</h3>
+        <b>Shaders</b>
+        <ul>
+          <li>Inverse Hull Method, Chromatic Aberration.</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Footer here-->
     <div id="footer"></div>
-
-    </body>
+  </body>
 </html>

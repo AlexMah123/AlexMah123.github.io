@@ -1,6 +1,7 @@
-// Shared site behaviour: header/footer injection, tab navigation and the screenshot viewer.
-// Loaded with "defer", so the DOM is already parsed when this runs.
+// Shared site behaviour: header/footer injection, tab navigation, screenshot viewer and analytics.
+// Loaded with "defer" on every page, so the DOM is already parsed when this runs.
 (function () {
+  const GA_MEASUREMENT_ID = 'G-9QCRQ7NQCZ';
   const isHomePage = document.getElementById('home') !== null;
 
   async function loadPartial(selector, url) {
@@ -9,23 +10,29 @@
 
     try {
       const response = await fetch(url);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
       target.innerHTML = await response.text();
     } catch (error) {
       console.error(`Error loading ${url}:`, error);
     }
   }
 
-  // Show the content region matching the URL hash (defaults to #home) and highlight its menu link.
-  function showTab() {
-    let region = document.getElementById(location.hash.slice(1));
-    if (!region || !region.classList.contains('content-region')) {
-      region = document.getElementById('home');
-    }
+  // The content region matching the URL hash, defaulting to #home.
+  function currentRegion() {
+    const region = document.getElementById(location.hash.slice(1));
+    return region && region.classList.contains('content-region') ? region : document.getElementById('home');
+  }
 
-    document.querySelectorAll('.content-region').forEach(r => r.classList.toggle('hide', r !== region));
+  function highlightMenu(region) {
     document.querySelectorAll('.nav-link').forEach(link => {
       link.classList.toggle('active', link.getAttribute('href') === `#${region.id}`);
     });
+  }
+
+  function showTab() {
+    const region = currentRegion();
+    document.querySelectorAll('.content-region').forEach(r => r.classList.toggle('hide', r !== region));
+    highlightMenu(region);
 
     // Tabs act as pages, so start at the top instead of the browser's jump to the #anchor.
     window.scrollTo(0, 0);
@@ -57,16 +64,30 @@
     });
   }
 
+  // Google Analytics (gtag.js)
+  function loadAnalytics() {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_MEASUREMENT_ID);
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    document.head.appendChild(script);
+  }
+
   if (isHomePage) {
     showTab();
     window.addEventListener('hashchange', showTab);
     window.addEventListener('load', showTab);
   }
   setupScreenshotViewer();
+  loadAnalytics();
 
   loadPartial('#header', '/header.html').then(() => {
     if (isHomePage) {
-      showTab();
+      highlightMenu(currentRegion());
     } else {
       // On subpages, menu links point back to the matching tab on the home page.
       document.querySelectorAll('.nav-link').forEach(link => {

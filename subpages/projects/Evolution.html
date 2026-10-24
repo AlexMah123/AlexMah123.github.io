@@ -1,113 +1,86 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Page setup -->
-        <meta charset="utf-8">
-        <title>Evolution - Project</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evolution - Project</title>
+    <meta name="description" content="Humans have landed on your planet and are beginning to colonize your habitat. They are aware of your existence and are preparing a weapon that threatens your...">
 
-        <!-- Reset default styles and add support for google fonts -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Reset default styles and load fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Site styles -->
-        <link href="/mainStyle.css" rel="stylesheet">
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="/mainStyle.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-        <script src="/script.js" defer></script>
-        <script src="/loadGoogleAnalytics.js" defer></script>
+    <script src="/script.js" defer></script>
+  </head>
 
-    </head>
-
-    <body>
-    <!-- Header of page here-->
+  <body>
     <div id="header"></div>
 
-    <!-- Content here-->
     <div id="container">
-        <div id="content">
-            <!-- place Title here-->
-            <h1>Evolution</h1>
+      <div id="content">
+        <h1>Evolution</h1>
 
-            <!-- place youtube embed here-->
-            <div class ="responsive-embed">
-                <iframe width="480" height="270" allowfullscreen
-                        src="https://www.youtube.com/embed/UHTuzAkqC7c">
-                </iframe>
-            </div>
-
-            <!-- place itchio embed here-->
-            <div class ="responsive-embed">
-                <iframe src="https://itch.io/embed/1798649?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
-                        width="554" height="169">
-                    <a href="https://alexmah.itch.io/evolution">Evolution</a>
-                </iframe>
-            </div>
-
-            <!-- place summary here-->
-            <h3>SUMMARY</h3>
-            <ul>
-                <li>Role: Programmer</li>
-                <li>Status: Completed</li>
-                <li>Team members: 7</li>
-                <li>Duration: 3 Months</li>
-                <li>Genre: Action, Hack & Slash</li>
-                <li>Engine: Unity</li>
-            </ul>
-
-            <!-- place description of game here-->
-            <h3>Description</h3>
-            <p>
-                Humans have landed on your planet and are beginning to colonize your habitat.
-                They are aware of your existence and are preparing a weapon that threatens your survival.
-                Thus, your time is limited, and you have to fend them off and destroy their base before they prepare the super weapon.
-            </p>
-
-            <!-- place screenshot of image-->
-            <h3>Screenshots</h3>
-            <div class="screenshot_scroll_container">
-                <img src="/game-screenshot/Evolution/Evolution-SS1.jpg" alt="Evolution screenshot 1" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/Evolution/Evolution-SS2.jpg" alt="Evolution screenshot 2" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/Evolution/Evolution-SS3.jpg" alt="Evolution screenshot 3" class="generic_image" loading="lazy">
-            </div>
-
-            <!-- place what i contributed/proud of here-->
-            <h3>My Contribution</h3>
-            <p>
-                I was the team lead and the tech lead.
-            </p>
-
-            <ul>
-                <li>Player Stats: Common stats for an action game (health, speed, defense, perks stats).</li>
-                <li>Perks System: Randomized perks selection, application and execution of stats and effects.</li>
-                <li>Ability System: Randomized ability selection, application and execution of abilities.</li>
-                <li>Abilities and Perks: Implement unique perks (overheal, damage reduction, stats, etc) and abilities (dash, leap smash, etc)</li>
-            </ul>
-
-            <h3>Reflection</h3>
-            <p>
-                This was our second project as students doing 3D. It was challenging managing the fluidity of an action game.
-                Doing 3D for the first time gave us a lot of different challenges that 2D games did not.
-                One of them was dealing with lighting and animations. As an action game that revolves around combat, the fluidity of the player's control and animation was surprisingly challenging.
-                Players had to feel like they were moving smoothly without any pauses to be engaged while playing, any choppy-ness would be jarring.
-                <br><br>
-                But overall, another good solid first team project in 3D.
-            </p>
-
-<!--
-            <h3>Features that were implemented</h3>
-            <p>
-
-            </p>
--->
-
+        <div class="responsive-embed">
+          <iframe src="https://www.youtube.com/embed/UHTuzAkqC7c" title="Evolution gameplay video" width="480" height="270" loading="lazy" allowfullscreen></iframe>
         </div>
+
+        <div class="responsive-embed itch-embed">
+          <iframe src="https://itch.io/embed/1798649?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff" title="Evolution on itch.io" width="554" height="169" loading="lazy"><a href="https://alexmah.itch.io/evolution">Evolution</a></iframe>
+        </div>
+
+        <h3>SUMMARY</h3>
+        <ul>
+          <li>Role: Programmer</li>
+          <li>Status: Completed</li>
+          <li>Team members: 7</li>
+          <li>Duration: 3 Months</li>
+          <li>Genre: Action, Hack & Slash</li>
+          <li>Engine: Unity</li>
+        </ul>
+
+        <h3>Description</h3>
+        <p>
+          Humans have landed on your planet and are beginning to colonize your habitat.
+          They are aware of your existence and are preparing a weapon that threatens your survival.
+          Thus, your time is limited, and you have to fend them off and destroy their base before they prepare the super weapon.
+        </p>
+
+        <h3>Screenshots</h3>
+        <div class="screenshot_scroll_container">
+          <img src="/game-screenshot/Evolution/Evolution-SS1.jpg" alt="Evolution screenshot 1" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/Evolution/Evolution-SS2.jpg" alt="Evolution screenshot 2" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/Evolution/Evolution-SS3.jpg" alt="Evolution screenshot 3" class="generic_image" loading="lazy">
+        </div>
+
+        <h3>My Contribution</h3>
+        <p>
+          I was the team lead and the tech lead.
+        </p>
+
+        <ul>
+          <li>Player Stats: Common stats for an action game (health, speed, defense, perks stats).</li>
+          <li>Perks System: Randomized perks selection, application and execution of stats and effects.</li>
+          <li>Ability System: Randomized ability selection, application and execution of abilities.</li>
+          <li>Abilities and Perks: Implement unique perks (overheal, damage reduction, stats, etc) and abilities (dash, leap smash, etc)</li>
+        </ul>
+
+        <h3>Reflection</h3>
+        <p>
+          This was our second project as students doing 3D. It was challenging managing the fluidity of an action game.
+          Doing 3D for the first time gave us a lot of different challenges that 2D games did not.
+          One of them was dealing with lighting and animations. As an action game that revolves around combat, the fluidity of the player's control and animation was surprisingly challenging.
+          Players had to feel like they were moving smoothly without any pauses to be engaged while playing, any choppy-ness would be jarring.
+          <br><br>
+          But overall, another good solid first team project in 3D.
+        </p>
+      </div>
     </div>
 
-    <!-- Footer here-->
     <div id="footer"></div>
-
-    </body>
+  </body>
 </html>

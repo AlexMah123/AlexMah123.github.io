@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Page setup -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alex Mah Jia Yong - Game Programmer</title>
     <meta name="description" content="Portfolio of Alex Mah, a game programmer working in Unreal Engine and Unity, with shipped experience on PC and consoles.">
     <meta name="author" content="Alex Mah Jia Yong">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- Link previews (LinkedIn, Discord, etc.) -->
     <meta property="og:type" content="website">
@@ -15,29 +14,24 @@
     <meta property="og:url" content="https://alexmah123.github.io/">
     <meta property="og:image" content="https://alexmah123.github.io/mainpage-assets/headshot.jpg">
 
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <!-- Reset default styles and load fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Site styles -->
     <link href="/mainStyle.css" rel="stylesheet">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
     <script src="/script.js" defer></script>
-    <script src="/loadGoogleAnalytics.js" defer></script>
-
   </head>
 
   <body>
     <div id="header"></div>
 
-    <!-- Content here-->
     <div id="container">
       <div id="content">
-        <!-- Home tab here-->
+        <!-- Home tab -->
         <div id="home" class="content-region hide">
           <h2>Welcome to my portfolio!</h2>
           <p>
@@ -45,20 +39,17 @@
             PC and Steam (Steam API, Steamworks), working with test kits and dev kits to ensure proper porting.
             I’m currently a Gameplay Programmer at Ten Ten Studios, building ability, AI, camera and encounter systems.
             Before that I was at Streamline Studios, where I worked on
-            <a href="https://www.streamline-studios.com/post/heartwarming-open-world-adventure-upin-ipin-universe-is-out-now-on-pc-and-consoles"><u>Upin &amp; Ipin Universe</u></a>.
-            <br><br>
-            I also have an interest in Shaders and VFX after experimenting with them in Game Jams and experiencing their versatility.
-            <br><br>
-            Learn more about me, my experience and my skills in <a href="#about"><u>About</u></a>.
+            <a href="https://www.streamline-studios.com/post/heartwarming-open-world-adventure-upin-ipin-universe-is-out-now-on-pc-and-consoles">Upin &amp; Ipin Universe</a>.
+          </p>
+          <p>
+            Learn more about me, my experience and my skills in <a href="#about">About</a>.
           </p>
 
           <h2>Best Works</h2>
           <p>
-            See more at <a href="#personal-portfolio"><u>Portfolio!</u></a>
+            See more at <a href="#personal-portfolio">Portfolio!</a>
           </p>
           <div class="game_grid">
-            <!-- Game cells here -->
-
             <a href="subpages/projects/Overthrone.html" class="game_link">
               <div class="game_cell">
                 <img src="game-thumbnail/Overthrone.png" width="315" height="250" alt="Overthrone" class="game_image" loading="lazy">
@@ -79,12 +70,12 @@
               </div>
             </a>
 
-            <a href="subpages/projects/DarkRift.html" class="game_link">
+            <a href="subpages/game-jam/GastricBuster.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/DarkRift.png" width="315" height="250" alt="DarkRift" class="game_image" loading="lazy">
-                <p class="gameText_header">DarkRift</p>
+                <img src="game-thumbnail/Gastric.png" width="315" height="250" alt="Gastric Buster" class="game_image" loading="lazy">
+                <p class="gameText_header">Gastric Buster</p>
                 <p class="gameText_description">
-                  Challenge the realm to a game of rock paper scissors.
+                  Defeat gastric as an indigestion medicine.
                 </p>
               </div>
             </a>
@@ -92,22 +83,10 @@
           </div>
         </div>
 
-        <!-- personal portfolio tab here-->
+        <!-- Portfolio tab -->
         <div id="personal-portfolio" class="content-region hide">
           <h2>Projects</h2>
           <div class="game_grid">
-            <!-- Game cells here -->
-
-            <a href="subpages/projects/DarkRift.html" class="game_link">
-              <div class="game_cell">
-                <img src="game-thumbnail/DarkRift.png" width="315" height="250" alt="DarkRift" class="game_image" loading="lazy">
-                <p class="gameText_header">DarkRift</p>
-                <p class="gameText_description">
-                  Challenge the realm to a game of rock paper scissors.
-                </p>
-              </div>
-            </a>
-
             <a href="subpages/projects/Overthrone.html" class="game_link">
               <div class="game_cell">
                 <img src="game-thumbnail/Overthrone.png" width="315" height="250" alt="Overthrone" class="game_image" loading="lazy">
@@ -138,16 +117,24 @@
               </div>
             </a>
 
+            <a href="subpages/projects/DarkRift.html" class="game_link">
+              <div class="game_cell">
+                <img src="game-thumbnail/DarkRift.png" width="315" height="250" alt="DarkRift" class="game_image" loading="lazy">
+                <p class="gameText_header">DarkRift</p>
+                <p class="gameText_description">
+                  (Discontinued) Challenge the realm to a game of rock paper scissors.
+                </p>
+              </div>
+            </a>
+
           </div>
 
-          <!-- GAME JAM SECTION -->
+          <!-- Game jams -->
           <h2>Game Jams</h2>
           <p>
-            See more at <a href="https://alexmah.itch.io/"><u>Itch.io!</u></a>
+            See more at <a href="https://alexmah.itch.io/">Itch.io!</a>
           </p>
           <div class="game_grid">
-            <!-- Game cells here -->
-
             <a href="subpages/game-jam/GastricBuster.html" class="game_link">
               <div class="game_cell">
                 <img src="game-thumbnail/Gastric.png" width="315" height="250" alt="Gastric Buster" class="game_image" loading="lazy">
@@ -221,10 +208,10 @@
           </div>
         </div>
 
-        <!-- About tab here-->
+        <!-- About tab -->
         <div id="about" class="content-region hide">
           <h2>More About Me!</h2>
-          <img src="mainpage-assets/headshot.jpg" alt="Alex Mah" class="generic_image_noHover" width="200" height="267" style="display: block; margin: auto;">
+          <img src="mainpage-assets/headshot.jpg" alt="Alex Mah" class="headshot" width="200" height="267">
 
           <p>
             Hello, I’m Alex Mah, a programmer and graduate of the University of Wollongong, Malaysia.
@@ -235,9 +222,7 @@
 
           <p>
             Today I’m mostly a generalist game programmer, and am more of a jack of all trades.
-            My recent interest would be to explore Shaders and VFX.
-            It is a pretty versatile way of implementing features/effects.
-            It has helped expand my view on how certain visual effects can be implemented to improve games.
+            My current focus is gameplay systems: abilities, enemy AI, cameras and encounters.
           </p>
 
           <p>
@@ -358,9 +343,9 @@
 
         </div>
 
-        <!-- Resume Tab here -->
+        <!-- Resume tab -->
         <div id="resume" class="content-region hide">
-          <h4>You can download the PDF <a href="mainpage-assets/resume.pdf"><u>here.</u></a></h4>
+          <h4>You can download the PDF <a href="mainpage-assets/resume.pdf">here.</a></h4>
           <!-- loading="lazy" keeps the PDF from downloading until the Resume tab is opened -->
           <iframe src="mainpage-assets/resume.pdf#zoom=100" class="resume-embed" title="Resume" loading="lazy"></iframe>
         </div>

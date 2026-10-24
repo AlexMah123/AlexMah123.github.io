@@ -1,106 +1,86 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Page setup -->
-        <meta charset="utf-8">
-        <title>Keep It Off - Game Jam</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keep It Off - Game Jam</title>
+    <meta name="description" content="You play as a kid going on a road trip with your dad. But something is amiss with the car... Keep It Off is a 3D retro horror/thriller game with a simple mou...">
 
-        <!-- Reset default styles and add support for google fonts -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Reset default styles and load fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Site styles -->
-        <link href="/mainStyle.css" rel="stylesheet">
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="/mainStyle.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-        <script src="/script.js" defer></script>
-        <script src="/loadGoogleAnalytics.js" defer></script>
+    <script src="/script.js" defer></script>
+  </head>
 
-    </head>
+  <body>
+    <div id="header"></div>
 
-    <body>
-        <!-- Header of page here-->
-        <div id="header"></div>
+    <div id="container">
+      <div id="content">
+        <h1>Keep It Off</h1>
 
-        <!-- Content here-->
-        <div id="container">
-            <div id="content">
-                <!-- place Title here-->
-                <h1>Keep It Off</h1>
-
-                <!-- place youtube embed here-->
-                <div class ="responsive-embed">
-                    <iframe width="480" height="270" allowfullscreen
-                            src="https://www.youtube.com/embed/xWZAp8bTZIE">
-                    </iframe>
-                </div>
-
-                <!-- place itchio embed here-->
-                <div class ="responsive-embed">
-                    <iframe src="https://itch.io/embed/3096559?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
-                            width="554" height="169">
-                        <a href="https://alexmah.itch.io/keepitoff">Keep It Off</a>
-                    </iframe>
-                </div>
-
-                <!-- place summary here-->
-                <h3>SUMMARY</h3>
-                <ul>
-                    <li>Role: Artist / VFX / Cinematic</li>
-                    <li>Status: Completed</li>
-                    <li>Team members: 3</li>
-                    <li>Duration: 7 Days</li>
-                    <li>Jam Theme: Light</li>
-                    <li>Engine: Unity</li>
-                </ul>
-
-                <!-- place description of game here-->
-                <h3>Description</h3>
-                <p>
-                    You play as a kid going on a road trip with your dad. But something is amiss with the car... <br>
-                    Keep It Off is a 3D retro horror/thriller game with a simple mouse controls.
-                </p>
-
-                <!-- place screenshot of image-->
-                <h3>Screenshots</h3>
-                <div class="screenshot_scroll_container">
-                    <img src="/game-screenshot/KeepItOff/KeepItOff-SS1.jpg" alt="Keep It Off screenshot 1" class="generic_image" loading="lazy">
-                    <img src="/game-screenshot/KeepItOff/KeepItOff-SS2.jpg" alt="Keep It Off screenshot 2" class="generic_image" loading="lazy">
-                    <img src="/game-screenshot/KeepItOff/KeepItOff-SS3.jpg" alt="Keep It Off screenshot 3" class="generic_image" loading="lazy">
-                </div>
-
-                <!-- place what i contributed/proud of here-->
-                <h3>My Contribution</h3>
-                <p>
-                    Our team did not have any artist, so we had to wear multiple hats around the game. I chose to focus on the art/design side of the game.
-                </p>
-
-                <ul>
-                    <li>Art - Car Model</li>
-                    <li>Visual - Shaders(Outline, CRT, Glitch), Pixelated Render, Post Processing</li>
-                    <li>Storyboard & Cinematic - Tutorial + Introduction</li>
-                </ul>
-
-                <h3>Reflection</h3>
-                <p>
-                    We joined the IndieJam 2024 without any artist, and with the gameplay being relatively simple, we had to split up our contribution into different roles.
-                    I chose to focus on the art/design side of the game since I wanted to practice my modeling skills.
-                    <br><br>
-                    I modeled the car in BlockBench and polished up the gameplay flow design-wise, since during our ideation the gameplay was a little rough around the edges.
-                    I also wanted to try out more Shaders and created a few simple but effective shaders to enhance the immersion of being in on a dark highway.
-                    I also explored creating cinematic for the first time using Unity Timeline.
-                    It was relatively easy to pick up, and it did a lot in introducing the narrative and the gameplay to the player.
-                    We were close to winning but overall, we are thrilled with the final product since we had pretty good feedback from other developers at the event.
-                </p>
-
-            </div>
+        <div class="responsive-embed">
+          <iframe src="https://www.youtube.com/embed/xWZAp8bTZIE" title="Keep It Off gameplay video" width="480" height="270" loading="lazy" allowfullscreen></iframe>
         </div>
 
-        <!-- Footer here-->
-        <div id="footer"></div>
+        <div class="responsive-embed itch-embed">
+          <iframe src="https://itch.io/embed/3096559?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff" title="Keep It Off on itch.io" width="554" height="169" loading="lazy"><a href="https://alexmah.itch.io/keepitoff">Keep It Off</a></iframe>
+        </div>
 
-    </body>
+        <h3>SUMMARY</h3>
+        <ul>
+          <li>Role: Artist / VFX / Cinematic</li>
+          <li>Status: Completed</li>
+          <li>Team members: 3</li>
+          <li>Duration: 7 Days</li>
+          <li>Jam Theme: Light</li>
+          <li>Engine: Unity</li>
+        </ul>
+
+        <h3>Description</h3>
+        <p>
+          You play as a kid going on a road trip with your dad. But something is amiss with the car... <br>
+          Keep It Off is a 3D retro horror/thriller game with a simple mouse controls.
+        </p>
+
+        <h3>Screenshots</h3>
+        <div class="screenshot_scroll_container">
+          <img src="/game-screenshot/KeepItOff/KeepItOff-SS1.jpg" alt="Keep It Off screenshot 1" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/KeepItOff/KeepItOff-SS2.jpg" alt="Keep It Off screenshot 2" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/KeepItOff/KeepItOff-SS3.jpg" alt="Keep It Off screenshot 3" class="generic_image" loading="lazy">
+        </div>
+
+        <h3>My Contribution</h3>
+        <p>
+          Our team did not have any artist, so we had to wear multiple hats around the game. I chose to focus on the art/design side of the game.
+        </p>
+
+        <ul>
+          <li>Art - Car Model</li>
+          <li>Visual - Shaders(Outline, CRT, Glitch), Pixelated Render, Post Processing</li>
+          <li>Storyboard & Cinematic - Tutorial + Introduction</li>
+        </ul>
+
+        <h3>Reflection</h3>
+        <p>
+          We joined the IndieJam 2024 without any artist, and with the gameplay being relatively simple, we had to split up our contribution into different roles.
+          I chose to focus on the art/design side of the game since I wanted to practice my modeling skills.
+          <br><br>
+          I modeled the car in BlockBench and polished up the gameplay flow design-wise, since during our ideation the gameplay was a little rough around the edges.
+          I also wanted to try out more Shaders and created a few simple but effective shaders to enhance the immersion of being in on a dark highway.
+          I also explored creating cinematic for the first time using Unity Timeline.
+          It was relatively easy to pick up, and it did a lot in introducing the narrative and the gameplay to the player.
+          We were close to winning but overall, we are thrilled with the final product since we had pretty good feedback from other developers at the event.
+        </p>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
 </html>

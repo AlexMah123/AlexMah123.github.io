@@ -1,103 +1,69 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Page setup -->
-        <meta charset="utf-8">
-        <title>Dark Rift - Project</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dark Rift - Project</title>
+    <meta name="description" content="You challenge the realm in a game of rock paper scissors... But with effects. Imagine buckshot roulette but with Rock Paper Scissors!">
 
-        <!-- Reset default styles and add support for google fonts -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Reset default styles and load fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Site styles -->
-        <link href="/mainStyle.css" rel="stylesheet">
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="/mainStyle.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-        <script src="/script.js" defer></script>
-        <script src="/loadGoogleAnalytics.js" defer></script>
+    <script src="/script.js" defer></script>
+  </head>
 
-    </head>
-
-    <body>
-    <!-- Header of page here-->
+  <body>
     <div id="header"></div>
 
-    <!-- Content here-->
     <div id="container">
-        <div id="content">
-            <!-- place Title here-->
-            <h1>Dark Rift</h1>
+      <div id="content">
+        <h1>Dark Rift</h1>
 
-            <!-- place youtube embed here-->
-            <div class ="responsive-embed">
-                <iframe width="480" height="270" allowfullscreen
-                        src="https://www.youtube.com/embed/0ohd2lpPaCo">
-                </iframe>
-            </div>
-
-            <!-- place itchio embed here-->
-            <div class ="responsive-embed">
-                <iframe src="https://itch.io/embed/3101115?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
-                        width="554" height="169">
-                    <a href="https://alexmah.itch.io/darkrift">DarkRift</a>
-                </iframe>
-            </div>
-
-            <!-- place summary here-->
-            <h3>SUMMARY</h3>
-            <ul>
-                <li>Role: Sole Programmer</li>
-                <li>Status: In Development</li>
-                <li>Team members: 4</li>
-                <li>Duration: In Progress</li>
-                <li>Genre: Card Game</li>
-                <li>Engine: Unity</li>
-            </ul>
-
-            <!-- place description of game here-->
-            <h3>Description</h3>
-            <p>
-                You challenge the realm in a game of rock paper scissors... But with effects. Imagine buckshot roulette but with Rock Paper Scissors!
-            </p>
-
-            <!-- place what i contributed/proud of here-->
-            <h3>My Contribution</h3>
-            <p>
-                The sole programmer for the game, designing the code-base architecture.
-            </p>
-
-            <ul>
-                <li>Turn System: Different phases between each round. (Segmented for ease of control)</li>
-                <li>Gameplay: Controls, Game flow.</li>
-                <li>AI Player: Decision-making AI based on statistical models (random, bayesian, markov-model).</li>
-                <li>Save System: Saves player progress, game progress, player loadout (Newtonsoft JSON).</li>
-                <li>Loadout System: Allows player and AI to equip different effects and execute them.</li>
-                <li>UI: Scene, Menu, Settings, Gameplay HUD, Level Selection, Reward Distribution, Tooltip, Stats, Inspect.</li>
-                <li>Components: Health, Damage, Choice, Inspect.</li>
-            </ul>
-
-<!--            <br>
-            <h3>Features that were implemented</h3>
-            <b>Turn System</b>
-            <ul>
-                <li>Using a simple state machine</li>
-            </ul>
-
-            <b>AI module</b>
-            <ul>
-                <li>Using Scriptable Objects</li>
-            </ul>-->
-
-            <!-- place screenshot of image-->
-
+        <div class="responsive-embed">
+          <iframe src="https://www.youtube.com/embed/0ohd2lpPaCo" title="Dark Rift gameplay video" width="480" height="270" loading="lazy" allowfullscreen></iframe>
         </div>
+
+        <div class="responsive-embed itch-embed">
+          <iframe src="https://itch.io/embed/3101115?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff" title="Dark Rift on itch.io" width="554" height="169" loading="lazy"><a href="https://alexmah.itch.io/darkrift">DarkRift</a></iframe>
+        </div>
+
+        <h3>SUMMARY</h3>
+        <ul>
+          <li>Role: Sole Programmer</li>
+          <li>Status: Discontinued</li>
+          <li>Team members: 4</li>
+          <li>Genre: Card Game</li>
+          <li>Engine: Unity</li>
+        </ul>
+
+        <h3>Description</h3>
+        <p>
+          You challenge the realm in a game of rock paper scissors... But with effects. Imagine buckshot roulette but with Rock Paper Scissors!
+        </p>
+
+        <h3>My Contribution</h3>
+        <p>
+          The sole programmer for the game, designing the code-base architecture.
+        </p>
+
+        <ul>
+          <li>Turn System: Different phases between each round. (Segmented for ease of control)</li>
+          <li>Gameplay: Controls, Game flow.</li>
+          <li>AI Player: Decision-making AI based on statistical models (random, bayesian, markov-model).</li>
+          <li>Save System: Saves player progress, game progress, player loadout (Newtonsoft JSON).</li>
+          <li>Loadout System: Allows player and AI to equip different effects and execute them.</li>
+          <li>UI: Scene, Menu, Settings, Gameplay HUD, Level Selection, Reward Distribution, Tooltip, Stats, Inspect.</li>
+          <li>Components: Health, Damage, Choice, Inspect.</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Footer here-->
     <div id="footer"></div>
-
-    </body>
+  </body>
 </html>

@@ -1,104 +1,84 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Page setup -->
-        <meta charset="utf-8">
-        <title>Biggie's Treasure Hunt - Game Jam</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biggie's Treasure Hunt - Game Jam</title>
+    <meta name="description" content="Simple hyper-casual game made for RedGameJam2024. Drag and shoot biggie in KLIA to get AirAsia coins by bumping into various things!">
 
-        <!-- Reset default styles and add support for google fonts -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Reset default styles and load fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Site styles -->
-        <link href="/mainStyle.css" rel="stylesheet">
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="/mainStyle.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-        <script src="/script.js" defer></script>
-        <script src="/loadGoogleAnalytics.js" defer></script>
+    <script src="/script.js" defer></script>
+  </head>
 
-    </head>
+  <body>
+    <div id="header"></div>
 
-    <body>
-        <!-- Header of page here-->
-        <div id="header"></div>
+    <div id="container">
+      <div id="content">
+        <h1>Biggie's Treasure Hunt</h1>
 
-        <!-- Content here-->
-        <div id="container">
-            <div id="content">
-                <!-- place Title here-->
-                <h1>Biggie's Treasure Hunt</h1>
-
-                <!-- place youtube embed here-->
-                <div class ="responsive-embed">
-                    <iframe width="480" height="270" allowfullscreen
-                            src="https://www.youtube.com/embed/vMqVcR7LjoU">
-                    </iframe>
-                </div>
-
-                <!-- place itchio embed here-->
-                <div class ="responsive-embed">
-                    <iframe src="https://itch.io/embed/2876695?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
-                            width="554" height="169">
-                        <a href="https://alexmah.itch.io/biggies-treasure-hunt">Biggie's Treasure Hunt</a>
-                    </iframe>
-                </div>
-
-                <!-- place summary here-->
-                <h3>SUMMARY</h3>
-                <ul>
-                    <li>Role: UI Programmer/Level Design</li>
-                    <li>Status: Completed</li>
-                    <li>Team members: 4</li>
-                    <li>Duration: 3 Days</li>
-                    <li>Jam Theme: Hyper-casual</li>
-                    <li>Engine: Unity</li>
-                </ul>
-
-                <!-- place screenshot of image-->
-                <h3>Achievement</h3>
-                <img src="/game-screenshot/Biggie/RedGameJamPodium.jpg" alt="Biggie's Treasure Hunt podium finish" class="achievement_image" loading="lazy">
-
-                <!-- place description of game here-->
-                <h3>Description</h3>
-                <p>
-                    Simple hyper-casual game made for RedGameJam2024.
-                    Drag and shoot biggie in KLIA to get AirAsia coins by bumping into various things!
-                </p>
-
-                <h3>Screenshots</h3>
-                <div class="screenshot_scroll_container">
-                    <img src="/game-screenshot/Biggie/Biggie-SS1.jpg" alt="Biggie's Treasure Hunt screenshot 1" class="generic_image" loading="lazy">
-                    <img src="/game-screenshot/Biggie/Biggie-SS2.jpg" alt="Biggie's Treasure Hunt screenshot 2" class="generic_image" loading="lazy">
-                </div>
-
-                <!-- place what I contributed/proud of here-->
-                <h3>My Contribution</h3>
-                <p>
-                    I worked as the UI Programmer and the Level Designer.
-                </p>
-
-                <ul>
-                    <li>Level Design - Tilemap</li>
-                    <li>UI - Scene, Menu, Settings, Tutorial</li>
-                </ul>
-
-                <h3>Reflection</h3>
-                <p>
-                    The gameplay mechanics were straightforward due to the nature of hyper-casual games, and the art design had to incorporate AirAsia's mascot into it.
-                    This was my first game jam in a while, and it was a good starting point. It plays like a pinball game but moving around the map to collect points.
-                    We previously drafted out the gameplay to have a few mini-games, but we decided to consolidate it to just one solid idea.
-                    <br><br>
-                    We were pleasantly surprised when we made the podium since there were many good games.
-                </p>
-
-            </div>
+        <div class="responsive-embed">
+          <iframe src="https://www.youtube.com/embed/vMqVcR7LjoU" title="Biggie's Treasure Hunt gameplay video" width="480" height="270" loading="lazy" allowfullscreen></iframe>
         </div>
 
-        <!-- Footer here-->
-        <div id="footer"></div>
+        <div class="responsive-embed itch-embed">
+          <iframe src="https://itch.io/embed/2876695?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff" title="Biggie's Treasure Hunt on itch.io" width="554" height="169" loading="lazy"><a href="https://alexmah.itch.io/biggies-treasure-hunt">Biggie's Treasure Hunt</a></iframe>
+        </div>
 
-    </body>
+        <h3>SUMMARY</h3>
+        <ul>
+          <li>Role: UI Programmer/Level Design</li>
+          <li>Status: Completed</li>
+          <li>Team members: 4</li>
+          <li>Duration: 3 Days</li>
+          <li>Jam Theme: Hyper-casual</li>
+          <li>Engine: Unity</li>
+        </ul>
+
+        <h3>Achievement</h3>
+        <img src="/game-screenshot/Biggie/RedGameJamPodium.jpg" alt="Biggie's Treasure Hunt podium finish" class="achievement_image" loading="lazy">
+
+        <h3>Description</h3>
+        <p>
+          Simple hyper-casual game made for RedGameJam2024.
+          Drag and shoot biggie in KLIA to get AirAsia coins by bumping into various things!
+        </p>
+
+        <h3>Screenshots</h3>
+        <div class="screenshot_scroll_container">
+          <img src="/game-screenshot/Biggie/Biggie-SS1.jpg" alt="Biggie's Treasure Hunt screenshot 1" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/Biggie/Biggie-SS2.jpg" alt="Biggie's Treasure Hunt screenshot 2" class="generic_image" loading="lazy">
+        </div>
+
+        <h3>My Contribution</h3>
+        <p>
+          I worked as the UI Programmer and the Level Designer.
+        </p>
+
+        <ul>
+          <li>Level Design - Tilemap</li>
+          <li>UI - Scene, Menu, Settings, Tutorial</li>
+        </ul>
+
+        <h3>Reflection</h3>
+        <p>
+          The gameplay mechanics were straightforward due to the nature of hyper-casual games, and the art design had to incorporate AirAsia's mascot into it.
+          This was my first game jam in a while, and it was a good starting point. It plays like a pinball game but moving around the map to collect points.
+          We previously drafted out the gameplay to have a few mini-games, but we decided to consolidate it to just one solid idea.
+          <br><br>
+          We were pleasantly surprised when we made the podium since there were many good games.
+        </p>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
 </html>

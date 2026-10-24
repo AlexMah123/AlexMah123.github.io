@@ -1,109 +1,89 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Page setup -->
-        <meta charset="utf-8">
-        <title>Blood Drive - Game Jam</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blood Drive - Game Jam</title>
+    <meta name="description" content="You play as an energy superpower secretly harvesting vampire blood to progress your organization's goals by converting them into fuel. Vampires have caught o...">
 
-        <!-- Reset default styles and add support for google fonts -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Reset default styles and load fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <!-- Site styles -->
-        <link href="/mainStyle.css" rel="stylesheet">
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="/mainStyle.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-        <script src="/script.js" defer></script>
-        <script src="/loadGoogleAnalytics.js" defer></script>
+    <script src="/script.js" defer></script>
+  </head>
 
-    </head>
-
-    <body>
-    <!-- Header of page here-->
+  <body>
     <div id="header"></div>
 
-    <!-- Content here-->
     <div id="container">
-        <div id="content">
-            <!-- place Title here-->
-            <h1>Blood Drive</h1>
+      <div id="content">
+        <h1>Blood Drive</h1>
 
-            <!-- place youtube embed here-->
-            <div class ="responsive-embed">
-                <iframe width="480" height="270"
-                        src="https://www.youtube.com/embed/q41pAeVbm7o">
-                </iframe>
-            </div>
-
-            <!-- place itchio embed here-->
-            <div class ="responsive-embed">
-                <iframe src="https://itch.io/embed/3048019?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
-                        width="554" height="169">
-                    <a href="https://alexmah.itch.io/blooddrive">Blood Drive</a>
-                </iframe>
-            </div>
-
-            <!-- place summary here-->
-            <h3>SUMMARY</h3>
-            <ul>
-                <li>Role: Artist / Programmer</li>
-                <li>Status: Completed</li>
-                <li>Team members: 3</li>
-                <li>Duration: 3 Days</li>
-                <li>Jam Theme/Prerequisite: Vampires/Blood is fuel</li>
-                <li>Engine: Unity</li>
-            </ul>
-
-            <!-- place description of game here-->
-            <h3>Description</h3>
-            <p>
-                You play as an energy superpower secretly harvesting vampire blood to progress your organization's goals by converting them into fuel.
-                Vampires have caught onto your actions and are trying to stop you.
-                Manage your employees to fend off these crawly beings by shining them with specially engineered floodlights which harm vampires.
-            </p>
-
-            <!-- place screenshot of image-->
-            <h3>Screenshots</h3>
-            <div class="screenshot_scroll_container">
-                <img src="/game-screenshot/BloodDrive/BloodDrive-SS1.jpg" alt="Blood Drive screenshot 1" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/BloodDrive/BloodDrive-SS2.jpg" alt="Blood Drive screenshot 2" class="generic_image" loading="lazy">
-                <img src="/game-screenshot/BloodDrive/BloodDrive-SS3.jpg" alt="Blood Drive screenshot 3" class="generic_image" loading="lazy">
-            </div>
-
-            <!-- place what i contributed/proud of here-->
-            <h3>My Contribution</h3>
-            <p>
-                Our team did not have any artist, so we had to wear multiple hats around the game. I chose to focus on the art/UI side of the game.
-            </p>
-
-            <ul>
-                <li>Art - Environment Asset, Building Asset</li>
-                <li>Visual - Post Processing</li>
-                <li>Gameplay - Tutorial + Introduction</li>
-                <li>Controls - Topdown RTS style camera</li>
-            </ul>
-
-            <h3>Reflection</h3>
-            <p>
-                We were pretty ambitious with the gameplay and it was very experimental. It is supposed to play a bit like an "RTS" (loosely) where you manage your employees
-                with the floodlights and fend off the vampire.
-                I decided to learn to model voxel-style with BlockBench for the first time.
-                It was a good experience to learn how an artist might have to work to model any assets.
-                I was definitely a little overwhelmed, but I had a friend guide me + online resources.
-                I focused on the controls and the art side while my teammates focused on the UI as well as the enemy AI.
-                <br><br>
-                We did pretty well in the visuals and concept department in the game voting, and we were happy with what we created for ourselves.
-                You can read more about my thoughts <a href="https://alexmah.itch.io/blooddrive/devlog/819570/microjam025-nice-to-have-features"><u>here!</u></a>
-            </p>
-
+        <div class="responsive-embed">
+          <iframe src="https://www.youtube.com/embed/q41pAeVbm7o" title="Blood Drive gameplay video" width="480" height="270" loading="lazy" allowfullscreen></iframe>
         </div>
+
+        <div class="responsive-embed itch-embed">
+          <iframe src="https://itch.io/embed/3048019?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff" title="Blood Drive on itch.io" width="554" height="169" loading="lazy"><a href="https://alexmah.itch.io/blooddrive">Blood Drive</a></iframe>
+        </div>
+
+        <h3>SUMMARY</h3>
+        <ul>
+          <li>Role: Artist / Programmer</li>
+          <li>Status: Completed</li>
+          <li>Team members: 3</li>
+          <li>Duration: 3 Days</li>
+          <li>Jam Theme/Prerequisite: Vampires/Blood is fuel</li>
+          <li>Engine: Unity</li>
+        </ul>
+
+        <h3>Description</h3>
+        <p>
+          You play as an energy superpower secretly harvesting vampire blood to progress your organization's goals by converting them into fuel.
+          Vampires have caught onto your actions and are trying to stop you.
+          Manage your employees to fend off these crawly beings by shining them with specially engineered floodlights which harm vampires.
+        </p>
+
+        <h3>Screenshots</h3>
+        <div class="screenshot_scroll_container">
+          <img src="/game-screenshot/BloodDrive/BloodDrive-SS1.jpg" alt="Blood Drive screenshot 1" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/BloodDrive/BloodDrive-SS2.jpg" alt="Blood Drive screenshot 2" class="generic_image" loading="lazy">
+          <img src="/game-screenshot/BloodDrive/BloodDrive-SS3.jpg" alt="Blood Drive screenshot 3" class="generic_image" loading="lazy">
+        </div>
+
+        <h3>My Contribution</h3>
+        <p>
+          Our team did not have any artist, so we had to wear multiple hats around the game. I chose to focus on the art/UI side of the game.
+        </p>
+
+        <ul>
+          <li>Art - Environment Asset, Building Asset</li>
+          <li>Visual - Post Processing</li>
+          <li>Gameplay - Tutorial + Introduction</li>
+          <li>Controls - Topdown RTS style camera</li>
+        </ul>
+
+        <h3>Reflection</h3>
+        <p>
+          We were pretty ambitious with the gameplay and it was very experimental. It is supposed to play a bit like an "RTS" (loosely) where you manage your employees
+          with the floodlights and fend off the vampire.
+          I decided to learn to model voxel-style with BlockBench for the first time.
+          It was a good experience to learn how an artist might have to work to model any assets.
+          I was definitely a little overwhelmed, but I had a friend guide me + online resources.
+          I focused on the controls and the art side while my teammates focused on the UI as well as the enemy AI.
+          <br><br>
+          We did pretty well in the visuals and concept department in the game voting, and we were happy with what we created for ourselves.
+          You can read more about my thoughts <a href="https://alexmah.itch.io/blooddrive/devlog/819570/microjam025-nice-to-have-features">here!</a>
+        </p>
+      </div>
     </div>
 
-    <!-- Footer here-->
     <div id="footer"></div>
-
-    </body>
+  </body>
 </html>
