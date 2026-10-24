@@ -4,43 +4,42 @@
         <!-- Page setup -->
         <meta charset="utf-8">
         <title>Evolution - Project</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
         <!-- Reset default styles and add support for google fonts -->
-        <link href="/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
         <!-- Link to external CSS from the root folder -->
         <link href="../../mainStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/menuIconStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/embedStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/imageStyle.css" rel="stylesheet" type="text/css">
-        
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+        <script src="/script.js" defer></script>
         <script src="/loadGoogleAnalytics.js" defer></script>
 
     </head>
-    
+
     <body>
     <!-- Header of page here-->
     <div id="header"></div>
 
-    
     <!-- Content here-->
     <div id="container">
         <div id="content">
             <!-- place Title here-->
             <h1>Evolution</h1>
-    
+
             <!-- place youtube embed here-->
             <div class ="responsive-embed">
                 <iframe width="480" height="270" allowfullscreen
                         src="https://www.youtube.com/embed/UHTuzAkqC7c">
                 </iframe>
             </div>
-    
+
             <!-- place itchio embed here-->
             <div class ="responsive-embed">
                 <iframe src="https://itch.io/embed/1798649?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
@@ -48,7 +47,7 @@
                     <a href="https://alexmah.itch.io/evolution">Evolution</a>
                 </iframe>
             </div>
-    
+
             <!-- place summary here-->
             <br>
             <h3>SUMMARY</h3>
@@ -65,8 +64,8 @@
             <br>
             <h3>Description</h3>
             <p>
-                Humans have landed on your planet and are beginning to colonize your habitat. 
-                They are aware of your existence and are preparing a weapon that threatens your survival. 
+                Humans have landed on your planet and are beginning to colonize your habitat.
+                They are aware of your existence and are preparing a weapon that threatens your survival.
                 Thus, your time is limited, and you have to fend them off and destroy their base before they prepare the super weapon.
             </p>
 
@@ -74,9 +73,9 @@
             <br>
             <h3>Screenshots</h3>
             <div class="screenshot_scroll_container">
-                <img src="/game-screenshot/Evolution/Evolution-SS1.png" alt="Screenshot 1" class="generic_image" onclick="openFullscreen(this)">
-                <img src="/game-screenshot/Evolution/Evolution-SS2.png" alt="Screenshot 2" class="generic_image" onclick="openFullscreen(this)">
-                <img src="/game-screenshot/Evolution/Evolution-SS3.png" alt="Screenshot 3" class="generic_image" onclick="openFullscreen(this)">
+                <img src="/game-screenshot/Evolution/Evolution-SS1.jpg" alt="Evolution screenshot 1" class="generic_image" loading="lazy">
+                <img src="/game-screenshot/Evolution/Evolution-SS2.jpg" alt="Evolution screenshot 2" class="generic_image" loading="lazy">
+                <img src="/game-screenshot/Evolution/Evolution-SS3.jpg" alt="Evolution screenshot 3" class="generic_image" loading="lazy">
             </div>
 
             <!-- place what i contributed/proud of here-->
@@ -85,7 +84,7 @@
             <p>
                 I was the team lead and the tech lead.
             </p>
-            
+
             <ul>
                 <li>Player Stats: Common stats for an action game (health, speed, defense, perks stats).</li>
                 <li>Perks System: Randomized perks selection, application and execution of stats and effects.</li>
@@ -96,8 +95,8 @@
             <br>
             <h3>Reflection</h3>
             <p>
-                This was our second project as students doing 3D. It was challenging managing the fluidity of an action game. 
-                Doing 3D for the first time gave us a lot of different challenges that 2D games did not. 
+                This was our second project as students doing 3D. It was challenging managing the fluidity of an action game.
+                Doing 3D for the first time gave us a lot of different challenges that 2D games did not.
                 One of them was dealing with lighting and animations. As an action game that revolves around combat, the fluidity of the player's control and animation was surprisingly challenging.
                 Players had to feel like they were moving smoothly without any pauses to be engaged while playing, any choppy-ness would be jarring.
                 <br><br>
@@ -112,26 +111,11 @@
             </p>
 -->
 
-            <!-- Full Screen-->
-            <div id="fullscreen-modal" class="fullscreen-modal">
-                <span class="close-btn" onclick="closeFullscreen()">&times;</span>
-                <img id="fullscreen-image" class="fullscreen-image" src="/game-thumbnail/RedGameJamPodium.png" alt="Expanded Image">
-            </div>
-    
         </div>
     </div>
-    
+
     <!-- Footer here-->
     <div id="footer"></div>
 
-    <!-- Include the previous JavaScript file -->
-    <script type="text/javascript" src="/script.js"></script>
-    <script  src="/loadHeaderFooter.js" defer></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            loadHeaderFooter("#header", "#footer");
-        });
-    </script>
-    
     </body>
 </html>

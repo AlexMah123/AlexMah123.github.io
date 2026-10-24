@@ -1,51 +1,82 @@
-// Wait for the document to load
-(function ($) {
-  $(window).on('load hashchange', function () {
-    // Wait for the header to be loaded before applying the logic
-    if (!document.querySelector('.main-menu')) {
-      setTimeout(() => $(window).trigger('hashchange'), 100);
-      return;
+// Shared site behaviour: header/footer injection, tab navigation and the screenshot viewer.
+// Loaded with "defer", so the DOM is already parsed when this runs.
+(function () {
+  const isHomePage = document.getElementById('home') !== null;
+
+  async function loadPartial(selector, url) {
+    const target = document.querySelector(selector);
+    if (!target) return;
+
+    try {
+      const response = await fetch(url);
+      target.innerHTML = await response.text();
+    } catch (error) {
+      console.error(`Error loading ${url}:`, error);
+    }
+  }
+
+  // Show the content region matching the URL hash (defaults to #home) and highlight its menu link.
+  function showTab() {
+    let region = document.getElementById(location.hash.slice(1));
+    if (!region || !region.classList.contains('content-region')) {
+      region = document.getElementById('home');
     }
 
-    // Hide all content regions
-    $('.content-region').hide();
+    document.querySelectorAll('.content-region').forEach(r => r.classList.toggle('hide', r !== region));
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${region.id}`);
+    });
 
-    // Remove any active classes on the main-menu
-    $('.main-menu a').removeClass('active');
+    // Tabs act as pages, so start at the top instead of the browser's jump to the #anchor.
+    window.scrollTo(0, 0);
+  }
 
-    // Determine the current hash or default to the first menu item
-    const region = location.hash || $('.main-menu a:first').attr('href');
+  // Clicking a screenshot opens it full size; click anywhere or press Escape to close.
+  function setupScreenshotViewer() {
+    const images = document.querySelectorAll('.generic_image, .achievement_image');
+    if (images.length === 0) return;
 
-    // Show the region specified in the hash
-    $(region).show();
+    const modal = document.createElement('div');
+    modal.className = 'fullscreen-modal';
+    modal.innerHTML = '<button class="close-btn" aria-label="Close">&times;</button><img class="fullscreen-image" alt="">';
+    document.body.appendChild(modal);
 
-    // Highlight the active menu link
-    $('.main-menu a[href="' + region + '"]').addClass('active');
+    const fullscreenImage = modal.querySelector('img');
+    const close = () => modal.classList.remove('active');
 
-    // If on a subpage, redirect to the main page with the correct hash
-    const isSubPage = !window.location.pathname.endsWith('index.html');
-    if (isSubPage && region) {
-      const mainPageURL = `https://alexmah123.github.io/index.html${region}`;
-      window.location.href = mainPageURL;
+    images.forEach(image => image.addEventListener('click', () => {
+      fullscreenImage.src = image.src;
+      fullscreenImage.alt = image.alt;
+      modal.classList.add('active');
+    }));
+    modal.addEventListener('click', event => {
+      if (event.target !== fullscreenImage) close();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') close();
+    });
+  }
+
+  if (isHomePage) {
+    showTab();
+    window.addEventListener('hashchange', showTab);
+    window.addEventListener('load', showTab);
+  }
+  setupScreenshotViewer();
+
+  loadPartial('#header', '/header.html').then(() => {
+    if (isHomePage) {
+      showTab();
+    } else {
+      // On subpages, menu links point back to the matching tab on the home page.
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.setAttribute('href', `/${link.getAttribute('href')}`);
+      });
     }
   });
-})(jQuery);
 
-
-function openFullscreen(image) {
-  // Get the modal and image elements
-  const modal = document.getElementById("fullscreen-modal");
-  const fullscreenImage = document.getElementById("fullscreen-image");
-  
-  // Set the modal image source to the clicked thumbnail's source
-  fullscreenImage.src = image.src;
-
-  // Show the modal
-  modal.classList.add("active");
-}
-
-function closeFullscreen() {
-  // Hide the modal
-  const modal = document.getElementById("fullscreen-modal");
-  modal.classList.remove("active");
-}
+  loadPartial('#footer', '/footer.html').then(() => {
+    const year = document.querySelector('.current-year');
+    if (year) year.textContent = new Date().getFullYear();
+  });
+})();

@@ -4,43 +4,42 @@
         <!-- Page setup -->
         <meta charset="utf-8">
         <title>Dark Rift - Project</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
         <!-- Reset default styles and add support for google fonts -->
-        <link href="/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
         <!-- Link to external CSS from the root folder -->
         <link href="../../mainStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/menuIconStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/embedStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/imageStyle.css" rel="stylesheet" type="text/css">
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+        <script src="/script.js" defer></script>
         <script src="/loadGoogleAnalytics.js" defer></script>
 
     </head>
-    
+
     <body>
     <!-- Header of page here-->
     <div id="header"></div>
 
-    
     <!-- Content here-->
     <div id="container">
         <div id="content">
             <!-- place Title here-->
             <h1>Dark Rift</h1>
-    
+
             <!-- place youtube embed here-->
             <div class ="responsive-embed">
                 <iframe width="480" height="270" allowfullscreen
                         src="https://www.youtube.com/embed/0ohd2lpPaCo">
                 </iframe>
             </div>
-    
+
             <!-- place itchio embed here-->
             <div class ="responsive-embed">
                 <iframe src="https://itch.io/embed/3101115?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
@@ -48,11 +47,11 @@
                     <a href="https://alexmah.itch.io/darkrift">DarkRift</a>
                 </iframe>
             </div>
-    
+
             <!-- place summary here-->
             <br>
             <h3>SUMMARY</h3>
-            <ul>                
+            <ul>
                 <li>Role: Sole Programmer</li>
                 <li>Status: In Development</li>
                 <li>Team members: 4</li>
@@ -74,7 +73,7 @@
             <p>
                 The sole programmer for the game, designing the code-base architecture.
             </p>
-            
+
             <ul>
                 <li>Turn System: Different phases between each round. (Segmented for ease of control)</li>
                 <li>Gameplay: Controls, Game flow.</li>
@@ -91,28 +90,19 @@
             <ul>
                 <li>Using a simple state machine</li>
             </ul>
-            
+
             <b>AI module</b>
             <ul>
                 <li>Using Scriptable Objects</li>
             </ul>-->
 
             <!-- place screenshot of image-->
-    
+
         </div>
     </div>
-    
+
     <!-- Footer here-->
     <div id="footer"></div>
 
-    <!-- Include the previous JavaScript file -->
-    <script type="text/javascript" src="/script.js"></script>
-    <script  src="/loadHeaderFooter.js" defer></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            loadHeaderFooter("#header", "#footer");
-        });
-    </script>
-    
     </body>
 </html>

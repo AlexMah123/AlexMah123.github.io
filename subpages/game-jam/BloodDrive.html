@@ -4,43 +4,42 @@
         <!-- Page setup -->
         <meta charset="utf-8">
         <title>Blood Drive - Game Jam</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
         <!-- Reset default styles and add support for google fonts -->
-        <link href="/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
         <!-- Link to external CSS from the root folder -->
         <link href="../../mainStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/menuIconStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/embedStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/imageStyle.css" rel="stylesheet" type="text/css">
-        
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+        <script src="/script.js" defer></script>
         <script src="/loadGoogleAnalytics.js" defer></script>
 
     </head>
-    
+
     <body>
     <!-- Header of page here-->
     <div id="header"></div>
 
-    
     <!-- Content here-->
     <div id="container">
         <div id="content">
             <!-- place Title here-->
             <h1>Blood Drive</h1>
-    
+
             <!-- place youtube embed here-->
             <div class ="responsive-embed">
                 <iframe width="480" height="270"
                         src="https://www.youtube.com/embed/q41pAeVbm7o">
                 </iframe>
             </div>
-            
+
             <!-- place itchio embed here-->
             <div class ="responsive-embed">
                 <iframe src="https://itch.io/embed/3048019?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
@@ -69,14 +68,14 @@
                 Vampires have caught onto your actions and are trying to stop you.
                 Manage your employees to fend off these crawly beings by shining them with specially engineered floodlights which harm vampires.
             </p>
-            
+
             <!-- place screenshot of image-->
             <br>
             <h3>Screenshots</h3>
             <div class="screenshot_scroll_container">
-                <img src="/game-screenshot/BloodDrive/BloodDrive-SS1.png" alt="Screenshot 1" class="generic_image" onclick="openFullscreen(this)">
-                <img src="/game-screenshot/BloodDrive/BloodDrive-SS2.png" alt="Screenshot 2" class="generic_image" onclick="openFullscreen(this)">
-                <img src="/game-screenshot/BloodDrive/BloodDrive-SS3.png" alt="Screenshot 3" class="generic_image" onclick="openFullscreen(this)">
+                <img src="/game-screenshot/BloodDrive/BloodDrive-SS1.jpg" alt="Blood Drive screenshot 1" class="generic_image" loading="lazy">
+                <img src="/game-screenshot/BloodDrive/BloodDrive-SS2.jpg" alt="Blood Drive screenshot 2" class="generic_image" loading="lazy">
+                <img src="/game-screenshot/BloodDrive/BloodDrive-SS3.jpg" alt="Blood Drive screenshot 3" class="generic_image" loading="lazy">
             </div>
 
             <!-- place what i contributed/proud of here-->
@@ -97,8 +96,8 @@
             <h3>Reflection</h3>
             <p>
                 We were pretty ambitious with the gameplay and it was very experimental. It is supposed to play a bit like an "RTS" (loosely) where you manage your employees
-                with the floodlights and fend of the vampire. 
-                I decided to learn to model voxel-style with BlockBench for the first time. 
+                with the floodlights and fend off the vampire.
+                I decided to learn to model voxel-style with BlockBench for the first time.
                 It was a good experience to learn how an artist might have to work to model any assets.
                 I was definitely a little overwhelmed, but I had a friend guide me + online resources.
                 I focused on the controls and the art side while my teammates focused on the UI as well as the enemy AI.
@@ -107,32 +106,11 @@
                 You can read more about my thoughts <a href="https://alexmah.itch.io/blooddrive/devlog/819570/microjam025-nice-to-have-features"><u>here!</u></a>
             </p>
 
-            <!-- Full Screen-->
-            <div id="fullscreen-modal" class="fullscreen-modal">
-                <span class="close-btn" onclick="closeFullscreen()">&times;</span>
-                <img id="fullscreen-image" class="fullscreen-image" src="/game-thumbnail/RedGameJamPodium.png" alt="Expanded Image">
-            </div>
-    
         </div>
     </div>
-    
+
     <!-- Footer here-->
     <div id="footer"></div>
 
-    <!-- Include the previous JavaScript file -->
-    <script type="text/javascript" src="/script.js"></script>
-    <script>
-        // Insert header and footer dynamically
-        fetch('/header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById("header").innerHTML = data)
-            .catch(error => console.error('Error loading header:', error));
-
-        fetch('/footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById("footer").innerHTML = data)
-            .catch(error => console.error('Error loading footer:', error));
-    </script>
-    
     </body>
 </html>

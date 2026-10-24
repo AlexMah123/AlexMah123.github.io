@@ -4,36 +4,35 @@
         <!-- Page setup -->
         <meta charset="utf-8">
         <title>Biggie's Treasure Hunt - Game Jam</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
         <!-- Reset default styles and add support for google fonts -->
-        <link href="/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
         <!-- Link to external CSS from the root folder -->
         <link href="../../mainStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/menuIconStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/embedStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/imageStyle.css" rel="stylesheet" type="text/css">
-        
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+        <script src="/script.js" defer></script>
         <script src="/loadGoogleAnalytics.js" defer></script>
 
     </head>
-    
+
     <body>
         <!-- Header of page here-->
         <div id="header"></div>
 
-        
         <!-- Content here-->
         <div id="container">
             <div id="content">
                 <!-- place Title here-->
                 <h1>Biggie's Treasure Hunt</h1>
-                
+
                 <!-- place youtube embed here-->
                 <div class ="responsive-embed">
                     <iframe width="480" height="270" allowfullscreen
@@ -64,8 +63,8 @@
                 <!-- place screenshot of image-->
                 <br>
                 <h3>Achievement</h3>
-                <img src ="/game-screenshot/Biggie/RedGameJamPodium.png" alt = "podium" class = "achievement_image" onclick="openFullscreen(this)">
-                
+                <img src="/game-screenshot/Biggie/RedGameJamPodium.jpg" alt="Biggie's Treasure Hunt podium finish" class="achievement_image" loading="lazy">
+
                 <!-- place description of game here-->
                 <br>
                 <h3>Description</h3>
@@ -77,8 +76,8 @@
                 <br>
                 <h3>Screenshots</h3>
                 <div class="screenshot_scroll_container">
-                    <img src="/game-screenshot/Biggie/Biggie-SS1.png" alt="Screenshot 1" class="generic_image" onclick="openFullscreen(this)">
-                    <img src="/game-screenshot/Biggie/Biggie-SS2.png" alt="Screenshot 2" class="generic_image" onclick="openFullscreen(this)">
+                    <img src="/game-screenshot/Biggie/Biggie-SS1.jpg" alt="Biggie's Treasure Hunt screenshot 1" class="generic_image" loading="lazy">
+                    <img src="/game-screenshot/Biggie/Biggie-SS2.jpg" alt="Biggie's Treasure Hunt screenshot 2" class="generic_image" loading="lazy">
                 </div>
 
                 <!-- place what I contributed/proud of here-->
@@ -102,27 +101,12 @@
                     <br><br>
                     We were pleasantly surprised when we made the podium since there were many good games.
                 </p>
-                
-                <!--Fullscreen here-->
-                <div id="fullscreen-modal" class="fullscreen-modal">
-                    <span class="close-btn" onclick="closeFullscreen()">&times;</span>
-                    <img id="fullscreen-image" class="fullscreen-image" src="/game-screenshot/Biggie/RedGameJamPodium.png" alt="Expanded Image">
-                </div>
-    
+
             </div>
         </div>
 
         <!-- Footer here-->
         <div id="footer"></div>
-
-        <!-- Include the previous JavaScript file -->
-        <script type="text/javascript" src="/script.js"></script>
-        <script  src="/loadHeaderFooter.js" defer></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                loadHeaderFooter("#header", "#footer");
-            });
-        </script>
 
     </body>
 </html>

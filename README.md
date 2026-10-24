@@ -1,22 +1,27 @@
-# Simple Website Using Github Pages
-Make a simple HTML website and publish it using Github Pages.  
-View example: https://zirafa.github.io/simple-website-template/
+# Alex Mah — Game Programmer Portfolio
 
-## Things to try
-- Edit index.html and change the title of the page
-- Edit index.html and change the content displayed in home, about, and contact.
-- Edit index.html and change the content in the footer region.
-- Replace logo.jpg and background.jpg with your own images.
-- Update the metadata in the header portion of index.html (this is used by search engines and browsers).
-- Edit style.css and change the link color and font style.
+Source for https://alexmah123.github.io, a static site served by GitHub Pages from the `gh-pages` branch.
 
-## Further reading
+## Structure
 
-### Can I make separate HTML files for each page?
-You can use Javascript AJAX calls to pull in external content into your index.html page. See script.js for more details.
+| Path | Purpose |
+|---|---|
+| `index.html` | Home page. Tabs (`#home`, `#personal-portfolio`, `#about`, `#resume`) are `.content-region` divs switched by the URL hash. |
+| `header.html`, `footer.html` | Shared header and footer, fetched into `#header` / `#footer` on every page. |
+| `script.js` | Loads the header/footer, handles tab switching and the click-to-enlarge screenshot viewer. |
+| `loadGoogleAnalytics.js` | Google Analytics (gtag). |
+| `subpages/projects/`, `subpages/game-jam/` | One page per game. |
+| `game-thumbnail/` | 315×250 card images used on the home page. |
+| `game-screenshot/<Game>/` | Screenshots (JPEG) shown on each game page. |
+| `mainpage-assets/` | Background, headshot, social icons and `resume.pdf`. |
+| `mainStyle.css`, `styles/` | Site styles. |
 
-### Can I configure a custom domain for my site, i.e. johnnymakerportfolio.com?
-Yes! Github Pages supports [custom domain configuration](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site). However, you will need to buy a domain name from a registrar such as [NameCheap](https://www.namecheap.com/) or [Gandi](https://www.gandi.net/) -- the cost is usually around $10 - $15 a year.
+## Adding a game
 
-### Can I add a blog, etc?
-This template works best for simple sites. For a blog you can try setting up [Jekyll, which is a static site generator that also works on Github pages](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll). For even more functionality, you will probably need a content management system (CMS) such as [Wordpress](https://wordpress.com), [Drupal](http://drupal.org), or [Django](https://www.djangoproject.com). A CMS will require additional setup and a website host, such as [Dreamhost](https://www.dreamhost.com/). 
+1. Copy an existing page in `subpages/` and update the title, YouTube/itch.io embeds, summary, text and screenshots.
+2. Screenshots: add `class="generic_image" loading="lazy"` to each `<img>`; `script.js` makes them open full size.
+3. Add a thumbnail to `game-thumbnail/` and a `game_cell` card to the matching grid in `index.html`.
+
+## Running locally
+
+Pages use root-relative paths (`/header.html`, `/script.js`), so serve the folder from its root rather than opening files directly, e.g. `npx serve .` or `python -m http.server`.

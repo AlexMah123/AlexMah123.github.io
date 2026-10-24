@@ -99,11 +99,11 @@ blockquote p:last-child {
  */
 
 /* Full size background image */
-html, #container, .inner { 
+html, #container { 
   background-color: transparent; 
 }
 html {
-  background: url('mainpage-assets/background.png') center center no-repeat fixed;
+  background: #111 url('mainpage-assets/background.jpg') center center no-repeat fixed;
   background-size: cover;
 }
 
@@ -148,9 +148,6 @@ footer {
 /* Utility classes */
 .hide {
   display: none;
-}
-.show {
-  display: block;
 }
 
 /* -----------Resizing for Mobile---------- */

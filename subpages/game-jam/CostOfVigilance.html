@@ -4,30 +4,29 @@
         <!-- Page setup -->
         <meta charset="utf-8">
         <title>Cost of Vigilance - Game Jam</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
         <!-- Reset default styles and add support for google fonts -->
-        <link href="/https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
         <!-- Link to external CSS from the root folder -->
         <link href="../../mainStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/menuIconStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/embedStyle.css" rel="stylesheet" type="text/css">
         <link href="../../styles/imageStyle.css" rel="stylesheet" type="text/css">
-        
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+        <script src="/script.js" defer></script>
         <script src="/loadGoogleAnalytics.js" defer></script>
 
     </head>
-    
+
     <body>
         <!-- Header of page here-->
         <div id="header"></div>
 
-        
         <!-- Content here-->
         <div id="container">
             <div id="content">
@@ -40,7 +39,7 @@
                             src="https://www.youtube.com/embed/9L81JGAYl7k">
                     </iframe>
                 </div>
-    
+
                 <!-- place itchio embed here-->
                 <div class ="responsive-embed">
                     <iframe src="https://itch.io/embed/3034286?border_width=2&amp;bg_color=000000&amp;fg_color=ffffff"
@@ -48,7 +47,7 @@
                         <a href="https://alexmah.itch.io/cost-of-vigilance">Cost of Vigilance</a>
                     </iframe>
                 </div>
-                
+
                 <!-- place summary here-->
                 <br>
                 <h3>SUMMARY</h3>
@@ -65,7 +64,7 @@
                 <br>
                 <h3>Description</h3>
                 <p>
-                    You play as a vigilante trying to stop the city of crime. But the police are on your tail. 
+                    You play as a vigilante trying to stop the city of crime. But the police are on your tail.
                     Manage your resources and try to survive without being caught for your "altruism". Do you spend time prepping your actions, or do you remain passive?
                 </p>
 
@@ -73,9 +72,9 @@
                 <br>
                 <h3>Screenshots</h3>
                 <div class="screenshot_scroll_container">
-                    <img src="/game-screenshot/CostOfVigilance/CostOfVigilance-SS1.png" alt="Screenshot 1" class="generic_image" onclick="openFullscreen(this)">
-                    <img src="/game-screenshot/CostOfVigilance/CostOfVigilance-SS2.png" alt="Screenshot 2" class="generic_image" onclick="openFullscreen(this)">
-                    <img src="/game-screenshot/CostOfVigilance/CostOfVigilance-SS3.png" alt="Screenshot 3" class="generic_image" onclick="openFullscreen(this)">
+                    <img src="/game-screenshot/CostOfVigilance/CostOfVigilance-SS1.jpg" alt="Cost of Vigilance screenshot 1" class="generic_image" loading="lazy">
+                    <img src="/game-screenshot/CostOfVigilance/CostOfVigilance-SS2.jpg" alt="Cost of Vigilance screenshot 2" class="generic_image" loading="lazy">
+                    <img src="/game-screenshot/CostOfVigilance/CostOfVigilance-SS3.jpg" alt="Cost of Vigilance screenshot 3" class="generic_image" loading="lazy">
                 </div>
 
                 <!-- place what i contributed/proud of here-->
@@ -98,10 +97,10 @@
                 <p>
                     This game jam was very experimental. I wanted to try out the idea of a simulation game, but the game interacts with the player based on their decision.
                     It is inspired from WWE TCG where the prematch mechanic allows the field/setting of the game to be different from every game based on your decision.
-                    So as a vigilante, your actions will affect how the police and the mobsters react. 
+                    So as a vigilante, your actions will affect how the police and the mobsters react.
                     <br><br>
-                    As a solo, I managed to get the main systems in, but I did not manage to implement the environmental reaction part of the game. 
-                    It would be a cool small project to continue. You can read more about my thoughts 
+                    As a solo, I managed to get the main systems in, but I did not manage to implement the environmental reaction part of the game.
+                    It would be a cool small project to continue. You can read more about my thoughts
                     <a href="https://alexmah.itch.io/cost-of-vigilance/devlog/815407/minijam-169-things-that-would-have-been-nice-to-add"><u>here!</u></a>
                 </p>
 
@@ -111,33 +110,18 @@
                 <ul>
                     <li>Scriptable Objects to hold common data</li>
                 </ul>
-                
+
                 <b>GameManager</b>
                 <ul>
                     <li>Tracks the current state of the game.</li>
                     <li>Whenever a player makes a decision, adds to the current state of the game (current alert, current vigilante, decisions made, etc.)</li>
                 </ul>
 
-                <!-- Full Screen-->
-                <div id="fullscreen-modal" class="fullscreen-modal">
-                    <span class="close-btn" onclick="closeFullscreen()"></span>
-                    <img id="fullscreen-image" class="fullscreen-image" src="/game-thumbnail/RedGameJamPodium.png" alt="Expanded Image">
-                </div>
-    
             </div>
         </div>
 
         <!-- Footer here-->
         <div id="footer"></div>
-
-        <!-- Include the previous JavaScript file -->
-        <script type="text/javascript" src="/script.js"></script>
-        <script  src="/loadHeaderFooter.js" defer></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                loadHeaderFooter("#header", "#footer");
-            });
-        </script>
 
     </body>
 </html>

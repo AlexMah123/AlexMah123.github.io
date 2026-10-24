@@ -1,10 +1,13 @@
-﻿/* Menu tabs header list*/
-ul.main-menu {
-    margin: 0;
-    padding: 0;
+/* Menu tabs header nav*/
+.main-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 

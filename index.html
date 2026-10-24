@@ -4,17 +4,19 @@
     <!-- Page setup -->
     <meta charset="utf-8">
     <title>Alex Mah Jia Yong</title>
-    <meta name="description" content="Portfolio (Programmer)">
-    <meta name="author" content="Game programmer (Unity and Unreal Engine)">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-  
+    <meta name="description" content="Portfolio of Alex Mah, a game programmer working in Unity and Unreal Engine.">
+    <meta name="author" content="Alex Mah Jia Yong">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <!-- Custom styles -->
-    <link href="mainStyle.css" rel="stylesheet" type="text/css">
+    <link href="/mainStyle.css" rel="stylesheet" type="text/css">
     <link href="/styles/menuIconStyle.css" rel="stylesheet" type="text/css">
     <link href="/styles/embedStyle.css" rel="stylesheet" type="text/css">
     <link href="/styles/imageStyle.css" rel="stylesheet" type="text/css">
@@ -22,13 +24,11 @@
     <link href="/styles/tableLayoutStyle.css" rel="stylesheet" type="text/css">
     <link href="/styles/gameCellStyle.css" rel="stylesheet" type="text/css">
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/script.js" defer></script>
+    <script src="/loadGoogleAnalytics.js" defer></script>
 
-    <script src="loadGoogleAnalytics.js" defer></script>
-    
   </head>
-  
+
   <body>
     <div id="header"></div>
 
@@ -53,10 +53,10 @@
           </p>
           <div class="game_grid">
             <!-- Game cells here -->
-            
+
             <a href="subpages/projects/Overthrone.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/Overthrone.png" alt="Game 2" class="game_image">
+                <img src="game-thumbnail/Overthrone.png" alt="Overthrone" class="game_image" loading="lazy">
                 <p class="gameText_header">Overthrone</p>
                 <p class="gameText_description">
                   Defend your homeland as a party with tactics
@@ -66,24 +66,24 @@
 
             <a href="subpages/game-jam/KeepItOff.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/KeepItOff.png" alt="Game 1" class="game_image">
+                <img src="game-thumbnail/KeepItOff.png" alt="Keep It Off" class="game_image" loading="lazy">
                 <p class="gameText_header">Keep It Off</p>
                 <p class="gameText_description">
-                  Fend of ghost with the car light while making sure you don't crash.
+                  Fend off ghost with the car light while making sure you don't crash.
                 </p>
               </div>
             </a>
 
             <a href="subpages/projects/DarkRift.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/DarkRift.png" alt="Game 1" class="game_image">
+                <img src="game-thumbnail/DarkRift.png" alt="DarkRift" class="game_image" loading="lazy">
                 <p class="gameText_header">DarkRift</p>
                 <p class="gameText_description">
                   Challenge the realm to a game of rock paper scissors.
                 </p>
               </div>
             </a>
-            
+
           </div>
         </div>
 
@@ -92,20 +92,20 @@
           <h2>Projects</h2>
           <div class="game_grid">
             <!-- Game cells here -->
-            
+
             <a href="subpages/projects/DarkRift.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/DarkRift.png" alt="Game 1" class="game_image">
+                <img src="game-thumbnail/DarkRift.png" alt="DarkRift" class="game_image" loading="lazy">
                 <p class="gameText_header">DarkRift</p>
                 <p class="gameText_description">
-                  Challenge the realm with a game of rock paper scissors.
+                  Challenge the realm to a game of rock paper scissors.
                 </p>
               </div>
             </a>
 
             <a href="subpages/projects/Overthrone.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/Overthrone.png" alt="Game 2" class="game_image">
+                <img src="game-thumbnail/Overthrone.png" alt="Overthrone" class="game_image" loading="lazy">
                 <p class="gameText_header">Overthrone</p>
                 <p class="gameText_description">
                   Defend your homeland as a party with tactics
@@ -115,17 +115,17 @@
 
             <a href="subpages/projects/Evolution.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/Evolution.png" alt="Game 3" class="game_image">
+                <img src="game-thumbnail/Evolution.png" alt="Evolution" class="game_image" loading="lazy">
                 <p class="gameText_header">Evolution</p>
                 <p class="gameText_description">
-                  Fend of humans before they exterminate your planet.
+                  Fend off humans before they exterminate your planet.
                 </p>
               </div>
             </a>
 
             <a href="subpages/projects/GuiltTrip.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/GuiltTrip.png" alt="Game 4" class="game_image">
+                <img src="game-thumbnail/GuiltTrip.png" alt="Guilt Trip" class="game_image" loading="lazy">
                 <p class="gameText_header">Guilt Trip</p>
                 <p class="gameText_description">
                   Resolve your guilt before it consumes you.
@@ -134,7 +134,7 @@
             </a>
 
           </div>
-          
+
           <!-- GAME JAM SECTION -->
           <br><br>
           <h2>Game Jams</h2>
@@ -143,60 +143,70 @@
           </p>
           <div class="game_grid">
             <!-- Game cells here -->
-            
+
             <a href="subpages/game-jam/GastricBuster.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/Gastric.png" alt="Game 6" class="game_image">
+                <img src="game-thumbnail/Gastric.png" alt="Gastric Buster" class="game_image" loading="lazy">
                 <p class="gameText_header">Gastric Buster</p>
                 <p class="gameText_description">
                   Defeat gastric as an indigestion medicine.
                 </p>
               </div>
             </a>
-            
+
             <a href="subpages/game-jam/KeepItOff.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/KeepItOff.png" alt="Game 1" class="game_image">
+                <img src="game-thumbnail/KeepItOff.png" alt="Keep It Off" class="game_image" loading="lazy">
                 <p class="gameText_header">Keep It Off</p>
                 <p class="gameText_description">
-                  Fend of ghost with the car light while making sure you don't crash.
+                  Fend off ghost with the car light while making sure you don't crash.
                 </p>
               </div>
             </a>
-            
+
             <a href="subpages/game-jam/BerryUnderBelly.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/BerryUnderBelly.png" alt="Game 2" class="game_image">
+                <img src="game-thumbnail/BerryUnderBelly.png" alt="Berry's Under Belly" class="game_image" loading="lazy">
                 <p class="gameText_header">Berry's Under Belly</p>
                 <p class="gameText_description">
                   Feed your cat as you complete strange surveys
                 </p>
               </div>
             </a>
-            
+
             <a href="subpages/game-jam/BloodDrive.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/BloodDrive.png" alt="Game 3" class="game_image">
+                <img src="game-thumbnail/BloodDrive.png" alt="Blood Drive" class="game_image" loading="lazy">
                 <p class="gameText_header">Blood Drive</p>
                 <p class="gameText_description">
                   Guide your employees while fending of vampires.
                 </p>
               </div>
             </a>
-            
+
             <a href="subpages/game-jam/CostOfVigilance.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/CostOfVigilance.png" alt="Game 4" class="game_image">
+                <img src="game-thumbnail/CostOfVigilance.png" alt="Cost of Vigilance" class="game_image" loading="lazy">
                 <p class="gameText_header">Cost of Vigilance</p>
                 <p class="gameText_description">
                   Stop crime as a vigilante while not getting caught.
                 </p>
               </div>
             </a>
-            
+
+            <a href="subpages/game-jam/LightsOut.html" class="game_link">
+              <div class="game_cell">
+                <img src="game-thumbnail/LightsOut.png" alt="Lights Out" class="game_image" loading="lazy">
+                <p class="gameText_header">Lights Out</p>
+                <p class="gameText_description">
+                  Save electricity as a parent while your kid can't sleep.
+                </p>
+              </div>
+            </a>
+
             <a href="subpages/game-jam/BiggiesTreasureHunt.html" class="game_link">
               <div class="game_cell">
-                <img src="game-thumbnail/BiggiesTreasureHunt.png" alt="Game 5" class="game_image">
+                <img src="game-thumbnail/BiggiesTreasureHunt.png" alt="Biggie's Treasure Hunt" class="game_image" loading="lazy">
                 <p class="gameText_header">Biggie's Treasure Hunt</p>
                 <p class="gameText_description">
                   Roam around the airport collecting points for AirAsia!
@@ -210,22 +220,22 @@
         <!-- About tab here-->
         <div id="about" class="content-region hide">
           <h2>More About Me!</h2>
-          <img src="mainpage-assets/headshot.png" alt="headshot" class="generic_image_noHover" style="display: flex; margin:auto;">
-          
+          <img src="mainpage-assets/headshot.jpg" alt="Alex Mah" class="generic_image_noHover" width="200" height="267" style="display: block; margin: auto;">
+
           <p>
             Hello, I’m Alex Mah, a programmer and graduate of the University of Wollongong, Malaysia.
-            My journey into game development began after my foundation program when I decided to explore my interests. 
+            My journey into game development began after my foundation program when I decided to explore my interests.
             I tried out programming, learning Python, and it got me interested in the tech field, and after weighing my interest, I decided to try out game development.
             This leap of faith led me to game programming, combining my love for games as a kid with my passion for problem-solving.
           </p>
-          
+
           <p>
             Today I’m mostly a generalist game programmer, and am more of a jack of all trades.
-            My recent interest would be to explore Shaders and VFX. 
+            My recent interest would be to explore Shaders and VFX.
             It is a pretty versatile way of implementing features/effects.
             It has helped expand my view on how certain visual effects can be implemented to improve games.
           </p>
-          
+
           <p>
             Outside of work, I’m a gamer (digital and physical), a big competitive TCG player, and I enjoy going to the gym.
             I’m currently actively playing Magic: The Gathering.
@@ -269,9 +279,9 @@
             </div>
 
           </div>
-          
+
         </div>
-        
+
         <!-- Resume Tab here -->
         <div id="resume" class="content-region hide">
           <h4>You can download the PDF <a href="mainpage-assets/resume.pdf"><u>here.</u></a></h4>
@@ -279,21 +289,11 @@
             <embed src="mainpage-assets/resume.pdf#zoom=100" width="100%" height="800" type="application/pdf" >
           </div>
         </div>
-                
+
       </div>
     </div>
 
     <div id="footer"></div>
 
-    <!-- Include the previous JavaScript file -->
-    <script type="text/javascript" src="script.js"></script>
-    <script  src="loadHeaderFooter.js" defer></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        loadHeaderFooter("#header", "#footer");
-      });
-    </script>
-    
-    
   </body>
 </html>

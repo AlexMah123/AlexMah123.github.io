@@ -1,4 +1,4 @@
-﻿function loadGoogleAnalytics() {
+function loadGoogleAnalytics() {
     // Create the <script> tag for gtag.js
     const scriptTag = document.createElement('script');
     scriptTag.async = true;
