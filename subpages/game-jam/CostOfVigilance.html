@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cost of Vigilance - Game Jam</title>
-    <meta name="description" content="You play as a vigilante trying to stop the city of crime. But the police are on your tail. Manage your resources and try to survive without being caught for ...">
+    <meta name="description" content="You play as a vigilante trying to rid the city of crime. But the police are on your tail. Manage your resources and try to survive without being caught for ...">
 
     <!-- Reset default styles and load fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 
         <h3>Description</h3>
         <p>
-          You play as a vigilante trying to stop the city of crime. But the police are on your tail.
+          You play as a vigilante trying to rid the city of crime. But the police are on your tail.
           Manage your resources and try to survive without being caught for your "altruism". Do you spend time prepping your actions, or do you remain passive?
         </p>
 
@@ -72,21 +72,22 @@
         <h3>Reflection</h3>
         <p>
           This game jam was very experimental. I wanted to try out the idea of a simulation game, but the game interacts with the player based on their decision.
-          It is inspired from WWE TCG where the prematch mechanic allows the field/setting of the game to be different from every game based on your decision.
+          It is inspired by WWE TCG where the prematch mechanic allows the field/setting of the game to be different every game based on your decision.
           So as a vigilante, your actions will affect how the police and the mobsters react.
-          <br><br>
+        </p>
+        <p>
           As a solo, I managed to get the main systems in, but I did not manage to implement the environmental reaction part of the game.
           It would be a cool small project to continue. You can read more about my thoughts
           <a href="https://alexmah.itch.io/cost-of-vigilance/devlog/815407/minijam-169-things-that-would-have-been-nice-to-add">here!</a>
         </p>
 
         <h3>Features that were implemented</h3>
-        <b>Decision</b>
+        <h4>Decision</h4>
         <ul>
           <li>Scriptable Objects to hold common data</li>
         </ul>
 
-        <b>GameManager</b>
+        <h4>GameManager</h4>
         <ul>
           <li>Tracks the current state of the game.</li>
           <li>Whenever a player makes a decision, adds to the current state of the game (current alert, current vigilante, decisions made, etc.)</li>

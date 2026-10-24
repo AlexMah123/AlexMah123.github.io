@@ -184,7 +184,7 @@ header {
   background-color: var(--card-bg);
   border: 3px solid var(--card-border);
   border-radius: 5%;
-  transition: all 200ms ease-in;
+  transition: border-color 200ms ease-in, box-shadow 200ms ease-in;
 }
 .game_cell:hover {
   border-color: var(--card-glow);
@@ -234,6 +234,7 @@ header {
   height: auto;
   border-radius: var(--radius);
   cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .generic_image {
   width: 200px;
